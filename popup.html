@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./styles/qrstyle.css">
+  <link rel="stylesheet" href="./styles/otp.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="main" id="qrparent" style="background-color: #F8F9FC;">
+        <div class="menuContainer">
+            <div class="loginLeftSectionContainer">
+                <p class="heading ng-scope">Login to Paytm Mall on your computer</p>
+                <div class="ng-scope">
+                    <div class="loginSteps">
+                        <ul>
+                            <li>
+                                <span class="index">
+                                    1.
+                                </span>
+                                <span class="text">
+                                    Open Paytm App
+                                </span>
+                            </li>
+                            <li>
+                                <span class="index">
+                                    2.
+                                </span>
+                                <span class="text">
+                                    Tap Scan <img class="icon" ng-src="/pages/themesv2/images/mp-web/q-rcode.svg"
+                                        src="https://accounts.paytm.com/pages/themesv2/images/mp-web/q-rcode.svg">
+                                    option
+                                    available
+                                    at the bottom
+                                </span>
+                            </li>
+                            <li>
+                                <span class="index">
+                                    3.
+                                </span>
+                                <span class="text">
+                                    Point Paytm Scan at QR Code to login
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="watchVideoButton">
+                        <img ng-if="isHowToLoginAllowed=='true'" ng-click="toggleIntroVideo()" class="icon ng-scope"
+                            ng-src="/pages/themesv2/images/mp-mall/video-icon.svg" role="button" tabindex="0"
+                            src="https://accounts.paytm.com/pages/themesv2/images/mp-mall/video-icon.svg">
+                        <span ng-if="isHowToLoginAllowed=='true'" ng-click="toggleIntroVideo()" class="ng-scope"
+                            role="button" tabindex="0">
+                            Watch Video
+                    </div>
+                    <div class="ctaArea">
+                        <div class="cta-description">To create an account download Paytm App</div>
+                        <div class="actionContainer">
+                            <a href="https://play.google.com/store/apps/details?id=net.one97.paytm" target="_blank"
+                                event-category="web_login" event-action="download_app_clicked" event-type="customEvent"
+                                event-label="android" screen-name="auth-init/QRlogin" ga-clickevent=""
+                                rel="noopener noreferrer">
+                                <img class="icon" ng-src="/pages/themesv2/images/mp-web/googleplay.svg"
+                                    src="https://accounts.paytm.com/pages/themesv2/images/mp-web/appstore.svg">
+                                <span>
+                                    Google Play
+                                </span>
+                            </a>
+                            <a href="https://apps.apple.com/bw/app/paytm-payments-bank-account/id473941634"
+                                target="_blank" event-category="web_login" event-action="download_app_clicked"
+                                event-type="customEvent" event-label="ios" screen-name="auth-init/QRlogin"
+                                ga-clickevent="" rel="noopener noreferrer">
+                                <img class="icon" ng-src="/pages/themesv2/images/mp-web/appstore.svg"
+                                    src="https://accounts.paytm.com/pages/themesv2/images/mp-web/appstore.svg">
+                                <span>
+                                    App Store
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qrCodeContainer">
+            <button class="close" style="text-align: center;
+            line-height: 12px;color: red;">Close</button>
+            <div class="qrcodechild">
+                <img src="https://accounts.paytm.com/pages/themesv2/images/paytm-qr-logo/paytm-qr-icon.svg" id="paytm" alt="">
+                <div class="qr-container">
+                    <div>
+                        <div class="overlay-refresh" role="button" tabindex="0">
+                            <img style="margin-top: 15px;" id="qr" src="./imges/download.png">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        Scan QR code with Paytm App to login
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="hrdiv">
+            <hr id="qrhr">
+        </div>
+    </div>
+    <h1 id="click">click me</h1>
+</body>
+<script src="./src/qrcode.js"></script>
+<script src="./src/otp.js"></script>
+
+</html>
