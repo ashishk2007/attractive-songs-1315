@@ -2,10 +2,12 @@
     margin: 0px;padding: 0px;box-sizing: border-box;
 }
 #qrparent{
+    z-index: 400;
     position: fixed;
     display: none;
 }
 #show{
+    z-index: 500;
     position: fixed;
     width: 70%;
     height: 65%;
@@ -18,6 +20,7 @@
     justify-content: space-evenly;
 }
 .main{
+    z-index: 600;
     position: fixed;
     width: 70%;
     height: 65%;
