@@ -41,7 +41,7 @@
         }
         a:hover{
             color: red;
-           border: 1px solid red;
+           border: 2px solid red;
         }
         #mid{
             width: 30%;
@@ -65,7 +65,7 @@
             cursor: pointer;
         }
         #bot{
-            width: 40%;
+            width: 30%;
             height: 500px;
             border: 1px solid rgb(206, 206, 206);
             border-radius: 15px;
@@ -73,7 +73,7 @@
             display: flex;
         }
         #bot>form{
-            width: 60%;
+            width: 80%;
             height: 80%;
             display: grid;
             gap: 10px;
