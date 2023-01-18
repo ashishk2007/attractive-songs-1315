@@ -3,7 +3,7 @@ let qr = document.getElementById("qr");
 let main = document.getElementById("qrparent");
 let click = document.getElementById("click");
 let Close = document.getElementById("Closeqr");
-
+let opt;
 Close.addEventListener("click", () =>{
   window.location = "index.html";
 })
@@ -11,11 +11,13 @@ Close.addEventListener("click", () =>{
     click.addEventListener("click", () => {
         main.setAttribute("id", "show")
         main.style.position="fixed";
+        body.setAttribute("id","body");
     })
     qr.addEventListener("click", () => {
         main.innerHTML = null;
         body.setAttribute("id","body");
         otp();
+        
     })
 
 
@@ -25,6 +27,8 @@ Close.addEventListener("click", () =>{
 
     function otp() {
         let form =`<div class="otpContainer">
+        <input type="number" id="mobileNumber" placeholder="Enter Mob No."/>
+        <button id="getotp"> Get OTP </button>
         <header>
           <i class="bx bxs-check-shield"></i>
         </header>
@@ -36,16 +40,37 @@ Close.addEventListener("click", () =>{
             <input class="otpInput" type="number"/>
             <input class="otpInput" type="number"/>
           </div>
-          <button id="otpbutton">Verify OTP</button>
+        <input   id="otpbutton" type="submit" value="Verify OTP"/>
         </form>
         <button class="otpclose" id="closeotp" style="text-align: center;margin-top:10px">Close</button>
       </div>`;
       main.innerHTML = form;
       
+      
       let close   = document.getElementById("closeotp");
-
       close.addEventListener("click", () =>{
         window.location = "index.html"
+      })
+      
+      let mobNootp = document.getElementById("getotp");
+      let mobNo = document.getElementById("mobileNumber");
+      mobNootp.addEventListener("click", () =>{
+       if(mobNo.value.length!==10){
+        window.alert("Please Enter 10 Digit Mob no.")
+       }else{
+         setTimeout(()=>{
+           otp = Math.floor(Math.random() * 10)+""+Math.floor(Math.random() * 10)+""+Math.floor(Math.random() * 10)+""+Math.floor(Math.random() * 10);
+         window.alert(otp);
+         },1)
+       }
+      })
+
+      let submit  = document.getElementById("otpform");
+      let otparray = document.getElementsByClassName("otpInput")
+      submit.addEventListener("submit",(e) =>{
+        e.preventDefault();
+        let otpMatch = otparray[0].value+""+otparray[1].value+""+otparray[2].value+""+otparray[3].value;
+        console.log(typeof +otpMatch)
       })
 
 }
