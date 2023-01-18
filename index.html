@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Mall</title>
+    <link rel="stylesheet" href="./styles/qrstyle.css">
+    <link rel="stylesheet" href="./styles/otp.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+      <style>
+        ._3Xyq{
+            width: 140px;
+            height: 160px;
+            border-radius: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        ._1H9O{
+            width: 100%;
+            /* height: 100%; */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" id="qrparent" style="background-color: #F8F9FC;">
+        <div class="menuContainer">
+            <div class="loginLeftSectionContainer">
+                <p class="heading ng-scope">Login to Paytm Mall on your computer</p>
+                <div class="ng-scope">
+                    <div class="loginSteps">
+                        <ul>
+                            <li>
+                                <span class="index">
+                                    1.
+                                </span>
+                                <span class="text">
+                                    Open Paytm App
+                                </span>
+                            </li>
+                            <li>
+                                <span class="index">
+                                    2.
+                                </span>
+                                <span class="text">
+                                    Tap Scan <img class="icon" ng-src="/pages/themesv2/images/mp-web/q-rcode.svg"
+                                        src="https://accounts.paytm.com/pages/themesv2/images/mp-web/q-rcode.svg">
+                                    option
+                                    available
+                                    at the bottom
+                                </span>
+                            </li>
+                            <li>
+                                <span class="index">
+                                    3.
+                                </span>
+                                <span class="text">
+                                    Point Paytm Scan at QR Code to login
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="watchVideoButton">
+                        <img ng-if="isHowToLoginAllowed=='true'" ng-click="toggleIntroVideo()" class="icon ng-scope"
+                            ng-src="/pages/themesv2/images/mp-mall/video-icon.svg" role="button" tabindex="0"
+                            src="https://accounts.paytm.com/pages/themesv2/images/mp-mall/video-icon.svg">
+                        <span ng-if="isHowToLoginAllowed=='true'" ng-click="toggleIntroVideo()" class="ng-scope"
+                            role="button" tabindex="0">
+                            Watch Video
+                    </div>
+                    <div class="ctaArea">
+                        <div class="cta-description">To create an account download Paytm App</div>
+                        <div class="actionContainer">
+                            <a href="https://play.google.com/store/apps/details?id=net.one97.paytm" target="_blank"
+                                event-category="web_login" event-action="download_app_clicked" event-type="customEvent"
+                                event-label="android" screen-name="auth-init/QRlogin" ga-clickevent=""
+                                rel="noopener noreferrer">
+                                <img class="icon" ng-src="/pages/themesv2/images/mp-web/googleplay.svg"
+                                    src="https://accounts.paytm.com/pages/themesv2/images/mp-web/appstore.svg">
+                                <span>
+                                    Google Play
+                                </span>
+                            </a>
+                            <a href="https://apps.apple.com/bw/app/paytm-payments-bank-account/id473941634"
+                                target="_blank" event-category="web_login" event-action="download_app_clicked"
+                                event-type="customEvent" event-label="ios" screen-name="auth-init/QRlogin"
+                                ga-clickevent="" rel="noopener noreferrer">
+                                <img class="icon" ng-src="/pages/themesv2/images/mp-web/appstore.svg"
+                                    src="https://accounts.paytm.com/pages/themesv2/images/mp-web/appstore.svg">
+                                <span>
+                                    App Store
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qrCodeContainer">
+            <button class="close" id="Closeqr" style="text-align: center;
+            line-height: 12px;color: red;">Close</button>
+            <div class="qrcodechild">
+                <img src="https://accounts.paytm.com/pages/themesv2/images/paytm-qr-logo/paytm-qr-icon.svg" id="paytm" alt="">
+                <div class="qr-container">
+                    <div>
+                        <div class="overlay-refresh" role="button" tabindex="0">
+                            <img style="margin-top: 15px;" id="qr" src="./imges/download.png">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        Scan QR code with Paytm App to login
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="hrdiv">
+            <hr id="qrhr">
+        </div>
+    </div>
+
+    <!-- above is qrcode popup don't do anything do it -->
+    <nav>
+        <!-- Create navbar here make sure all id and classes name start with nav -->
+    </nav>
+
+    <div>
+        <div class="swiper mySwiper">
+            <div class="jCqS _19iN swiper-wrapper">
+                <div class="_3Xyq swiper-slide">
+                    <img class="_1H9O"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/710342/1620736738312.jpg?imwidth=140&amp;impolicy=hq"
+                            alt="Central">
+                    <a class="_2zXZ">Central </a>
+                </div>
+            <div class="_3Xyq swiper-slide">
+                    <img class="_1H9O"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/498074/1613028372599.jpg?imwidth=140&amp;impolicy=hq"
+                            alt="Pantaloons">
+                    <a class="_2zXZ">Pantaloons </a>
+                </div>
+            <div class="_3Xyq swiper-slide">
+                    <img class="_1H9O"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/498091/1620736830834.png?imwidth=140&amp;impolicy=hq"
+                            alt="U.S.Polo Assn.">
+                    <a class="_2zXZ">U.S.Polo Assn. </a>
+                </div>
+            <div class="_3Xyq swiper-slide">
+                    <img class="_1H9O"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/994845/1643780245028.png?imwidth=140&amp;impolicy=hq"
+                            alt="Brand Factory">
+                    <a class="_2zXZ">Brand Factory </a>
+                </div>
+            <div class="_3Xyq swiper-slide">
+                    <img class="_1H9O"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/498086/1610536486321.jpg?imwidth=140&amp;impolicy=hq"
+                            alt="Levi's">
+                    <a class="_2zXZ">Levi's </a>
+                </div>
+            <div class="_3Xyq swiper-slide">
+                    <img class="_1H9O"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/498239/1620736478260.jpg?imwidth=140&amp;impolicy=hq"
+                            alt="ONLY">
+                    <a class="_2zXZ">ONLY </a>
+                </div>
+            <div class="_3Xyq swiper-slide">
+                    <img class="_1H9O"
+                                src="https://assetscdn1.paytm.com/images/catalog/view_item/498254/1610536539307.jpg?imwidth=140&amp;impolicy=hq"
+                                alt="UCB">
+                    <a class="_2zXZ">UCB </a>
+                    </div>
+            <div class="_3Xyq swiper-slide">
+                <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498081/1583915454539.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="BIBA">
+                <a class="_2zXZ">BIBA </a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994846/1643780303875.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Bewakoof.com">
+                <a class="_2zXZ">Bewakoof.com </a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498075/1593586492547.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Myntra">
+                <a class="_2zXZ">Myntra </a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994132/1643692700179.png?imwidth=140&amp;impolicy=hq"
+                        alt="V-Mart">
+                <a class="_2zXZ">V-Mart </a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994133/1643692702063.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Westside">
+                <a class="_2zXZ">Westside </a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994135/1643692758763.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Jack n Jones">
+                <a class="_2zXZ">Jack n Jones </a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994137/1643692795789.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="fabindia">
+                <a class="_2zXZ">fabindia </a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994138/1643692870440.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Allen solly">
+                <a class="_2zXZ">Allen solly </a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <img class="_1H9O"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/994847/1643780584196.png?imwidth=140&amp;impolicy=hq"
+                    alt="fbb">
+            <a class="_2zXZ">fbb </a>
+        </div>
+        <div class="_3Xyq swiper-slide">
+            <img class="_1H9O"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/994140/1643692915157.jpg?imwidth=140&amp;impolicy=hq"
+                    alt="Indian Terrain">
+            <a class="_2zXZ">Indian Terrain </a>
+        </div>
+        <div class="_3Xyq swiper-slide">
+            <img class="_1H9O"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/994848/1643780625232.png?imwidth=140&amp;impolicy=hq"
+                    alt="Reliance Trends">
+            <a class="_2zXZ">Reliance Trends </a>
+        </div>
+        <div class="_3Xyq swiper-slide">
+            <img class="_1H9O"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/994852/1643780584093.jpg?imwidth=140&amp;impolicy=hq"
+                    alt="Jockey">
+            <a class="_2zXZ">Jockey </a>
+        </div>
+        <div class="_3Xyq swiper-slide">
+            <img class="_1H9O"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/994849/1643780709215.jpg?imwidth=140&amp;impolicy=hq"
+                    alt="Decathlon">
+            <a class="_2zXZ">Decathlon </a>
+        </div>
+        <div class="_3Xyq swiper-slide">
+            <img class="_1H9O"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/994153/1643696199128.jpg?imwidth=140&amp;impolicy=hq"
+                    alt="Pretty Secrets">
+            <a class="_2zXZ">Pretty Secrets </a>
+        </div>
+        <div class="_3Xyq swiper-slide">
+            <img class="_1H9O"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/994154/1643696257591.jpg?imwidth=140&amp;impolicy=hq"
+                    alt="The Collective">
+            <a class="_2zXZ">The Collective </a>
+        </div>
+        <div class="_3Xyq swiper-slide">
+            <img class="_1H9O"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/994154/1643696257591.jpg?imwidth=140&amp;impolicy=hq"
+                    alt="The Collective">
+            <a class="_2zXZ">The Collective </a>
+        </div>
+        <div class="_3Xyq swiper-slide">
+            <img class="_1H9O"
+                    src="https://assetscdn1.paytm.com/images/catalog/view_item/994155/1643696297881.jpg?imwidth=140&amp;impolicy=hq"
+                    alt="W">
+            <a class="_2zXZ">W </a>
+        </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        </div>
+        <!-- add slider section here and make sure all id and classes name start with slider -->
+    </div>
+
+
+    <div>
+        <!-- make product slider section and make sure all id and classes name start with productslider -->
+    </div>
+
+    <section>
+        <!-- make product Section four div and make sure all id and classes name start with product section -->
+    </section>
+
+
+    <footer>
+        <!-- make all footer section make sure all id and classes name start with footer -->
+    </footer>
+
+</body>
+<script src="./src/qrcode.js"></script>
+<script src="./src/otp.js"></script>
+</html>
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 12,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>

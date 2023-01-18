@@ -1,10 +1,16 @@
+let body = document.querySelector("body");
 let qr = document.getElementById("qr");
-    let main = document.getElementById("qrparent");
-    let click = document.getElementById("click");
-    let body = document.querySelector("body");
+let main = document.getElementById("qrparent");
+let click = document.getElementById("click");
+let Close = document.getElementById("Closeqr");
+
+Close.addEventListener("click", () =>{
+  window.location = "index.html";
+})
 
     click.addEventListener("click", () => {
         main.setAttribute("id", "show")
+        main.style.position="fixed";
     })
     qr.addEventListener("click", () => {
         main.innerHTML = null;
@@ -32,9 +38,14 @@ let qr = document.getElementById("qr");
           </div>
           <button id="otpbutton">Verify OTP</button>
         </form>
-        <button class="otpclose" style="text-align: center;margin-top:10px">Close</button>
+        <button class="otpclose" id="closeotp" style="text-align: center;margin-top:10px">Close</button>
       </div>`;
       main.innerHTML = form;
       
+      let close   = document.getElementById("closeotp");
+
+      close.addEventListener("click", () =>{
+        window.location = "index.html"
+      })
 
 }

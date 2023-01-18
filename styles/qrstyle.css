@@ -2,9 +2,11 @@
     margin: 0px;padding: 0px;box-sizing: border-box;
 }
 #qrparent{
+    position: fixed;
     display: none;
 }
 #show{
+    position: fixed;
     width: 70%;
     height: 65%;
     position: absolute;
@@ -16,6 +18,7 @@
     justify-content: space-evenly;
 }
 .main{
+    position: fixed;
     width: 70%;
     height: 65%;
     position: absolute;
