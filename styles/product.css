@@ -7,11 +7,6 @@
    
 
 }
-
-#container>div{
-    /* border: 2px solid red; */
-    
-}
 #container>div>img{
     width: 80%;
     
@@ -27,3 +22,4 @@
     width: 100px;
     /* font-family: sans-serif Verdana, Geneva, Tahoma, sans-serif; */
 }
+
