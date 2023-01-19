@@ -6,10 +6,6 @@
     text-align: center;
 
 }
-#container>div{
-    text-align: center;
-    width: 80%;
-}
 #container>div>img{
     width: 100%;
 }
