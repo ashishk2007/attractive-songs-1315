@@ -1,4 +1,5 @@
 
+
 let container = document.querySelector("#container");
 fetch("json/mens.json")
   .then((res) => {
@@ -52,3 +53,4 @@ function display(data) {
     container.append(div,card)
   })
 }
+
