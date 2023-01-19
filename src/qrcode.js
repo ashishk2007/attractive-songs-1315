@@ -5,11 +5,12 @@ let click = document.getElementById("click");
 let Close = document.getElementById("Closeqr");
 let opt;
 Close.addEventListener("click", () =>{
-  window.location = "index.html";
+  main.setAttribute("id","a");
+  body.removeAttribute("id","body");
 })
 
     click.addEventListener("click", () => {
-        main.setAttribute("id", "show")
+        main.setAttribute("id", "show");
         main.style.position="fixed";
         body.setAttribute("id","body");
     })
@@ -17,7 +18,6 @@ Close.addEventListener("click", () =>{
         main.innerHTML = null;
         body.setAttribute("id","body");
         otp();
-        
     })
 
 
@@ -46,10 +46,10 @@ Close.addEventListener("click", () =>{
       </div>`;
       main.innerHTML = form;
       
-      
       let close   = document.getElementById("closeotp");
       close.addEventListener("click", () =>{
-        window.location = "index.html"
+        main.setAttribute("id","a");
+        body.removeAttribute("id","body");
       })
       
       let mobNootp = document.getElementById("getotp");
