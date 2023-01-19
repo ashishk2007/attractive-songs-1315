@@ -4,12 +4,8 @@
     gap: 30px;
 
 }
-#container>div{
-    text-align: center;
-    width: 80%;
-}
 #container>div>img{
-    width: 80%;
+    width: 100%;
     
 }
 #container>div>div{
