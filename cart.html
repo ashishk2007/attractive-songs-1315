@@ -7,6 +7,87 @@
     <title>Cart</title>
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: whitesmoke;
+        }
+        #container{
+            display: flex;
+           flex-direction: row;
+           width: 95%;
+           margin: auto;
+           gap: 0px 20px;
+          
+        }
+        #first-div{
+            width: 70%;
+            background-color: white;
+        }
+        #first-top-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 95%;
+            margin: auto;
+        }
+        #no-items,#payment-div{
+            margin: 20px;
+            padding-bottom: 20px;
+            line-height: 1.5;
+            font-size: 23px;
+        }
+       #payment-div{
+        border: 1.5px solid #ef4e28;
+        color: #ef4e28;
+        align-items: left;
+        font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;;
+       
+        padding: 12px 20px;
+        font-size: 15px;
+        font-weight: 500;
+
+       }
+        #second-div{
+            width: 30%;
+            gap: 20px 0px;
+            display: flex;
+            flex-direction: column;
+        }
+        #address-div,#total-div{
+            background-color: white;
+        }
+        #main{
+            display: flex;
+            flex-direction: row;
+            width: 95%;
+            margin: auto;
+        }
+        #main img{
+            width: 100%;
+            margin-right: 5px;
+            padding-right: 5px;
+        }
+        #imageDiv{
+            width: 10%;
+        }
+        #detailsDiv{
+            width: 45%;
+        }
+        #btnDiv{
+            width: 10%;
+        }
+        #priceDiv{
+            width :35%;
+            text-align: end;
+        }
+
+
+
+    </style>
 </head>
 <body>
 
@@ -15,6 +96,30 @@
     <nav>
         <!-- navbar will copied from homepage don't do anything here -->
     </nav>
+
+    <div id="container">
+        <div id="first-div">
+            <div id="first-top-div">
+                <div id="no-items"><strong id="length"> </strong> in your bag</div>
+                <div id="payment-div">Proceed to Pay ₹<span id="amount"></span></div>
+            </div>  
+            <hr>
+
+            <div id="item-container">  </div>
+        </div>
+
+        <div id="second-div">
+            <div id="address-div">
+                Address will be shown here
+            </div>
+            <div id="total-div">
+                total cart will be display here!!
+            </div>
+        </div>
+
+
+    </div>
+    
 
     <!-- //make cart section below this -->
 
@@ -26,3 +131,4 @@
     </footer>
 </body>
 </html>
+<script src="./src/cart.js"></script>
