@@ -65,7 +65,7 @@
             cursor: pointer;
         }
         #bot{
-            width: 40%;
+            width: 30%;
             height: 500px;
             border: 1px solid rgb(206, 206, 206);
             border-radius: 15px;
@@ -73,7 +73,7 @@
             display: flex;
         }
         #bot>form{
-            width: 60%;
+            width: 80%;
             height: 80%;
             display: grid;
             gap: 10px;
@@ -99,6 +99,7 @@
             border: 0px;
             color: red;
             font-size: 17px;
+            font-weight: 600;
         }
         #submitButn:focus{
             border: 0px;
@@ -145,6 +146,7 @@
             border: 0px;
             color: red;
             font-size: 17px;
+            font-weight: 600;
         }
         #DelButn:focus{
             border: 0px;
@@ -180,6 +182,27 @@
         }
         #Upbot>form>input:focus{
             outline: 1px solid red;
+        }
+        #UpButn{
+            width: 60%;
+            height: 80%;
+            margin: auto;
+            padding: 0px;
+            background-color: white;
+            outline:1px solid rgb(255, 0, 0);
+            border: 0px;
+            color: red;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        #UpButn:hover{
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            outline:0px;
+        }
+        #UpButn:focus{
+            border: 0px;
         }
         #middel{
             display: none;
