@@ -2,7 +2,13 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
+    margin-top: 20px;
+    text-align: center;
 
+}
+#container>div{
+    text-align: center;
+    width: 80%;
 }
 #container>div>img{
     width: 100%;
