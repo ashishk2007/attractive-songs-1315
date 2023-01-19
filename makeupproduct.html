@@ -1,17 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paytm product</title>
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/product.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paytm product</title>
+        <link rel="stylesheet" href="./styles/qrstyle.css">
+        <link rel="stylesheet" href="./styles/otp.css">
+        <link rel="stylesheet" href="./styles/footer.css">
+        <link rel="stylesheet" href="./styles/navbar.css">
+        <link rel="stylesheet" href="./styles/product.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    </head>
 <body>
-    <nav>
-        <!-- navbar will copied from homepage don't do anything here -->
+    <div class="main" id="qrparent" style="background-color: #F8F9FC;">
+        <div class="menuContainer">
+            <div class="loginLeftSectionContainer">
+                <p class="heading ng-scope">Login to Paytm Mall on your computer</p>
+                <div class="ng-scope">
+                    <div class="loginSteps">
+                        <ul>
+                            <li>
+                                <span class="index">
+                                    1.
+                                </span>
+                                <span class="text">
+                                    Open Paytm App
+                                </span>
+                            </li>
+                            <li>
+                                <span class="index">
+                                    2.
+                                </span>
+                                <span class="text">
+                                    Tap Scan <img class="icon" ng-src="/pages/themesv2/images/mp-web/q-rcode.svg"
+                                        src="https://accounts.paytm.com/pages/themesv2/images/mp-web/q-rcode.svg">
+                                    option
+                                    available
+                                    at the bottom
+                                </span>
+                            </li>
+                            <li>
+                                <span class="index">
+                                    3.
+                                </span>
+                                <span class="text">
+                                    Point Paytm Scan at QR Code to login
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="watchVideoButton">
+                        <img ng-if="isHowToLoginAllowed=='true'" ng-click="toggleIntroVideo()" class="icon ng-scope"
+                            ng-src="/pages/themesv2/images/mp-mall/video-icon.svg" role="button" tabindex="0"
+                            src="https://accounts.paytm.com/pages/themesv2/images/mp-mall/video-icon.svg">
+                        <span ng-if="isHowToLoginAllowed=='true'" ng-click="toggleIntroVideo()" class="ng-scope"
+                            role="button" tabindex="0">
+                            Watch Video
+                    </div>
+                    <div class="ctaArea">
+                        <div class="cta-description">To create an account download Paytm App</div>
+                        <div class="actionContainer">
+                            <a href="https://play.google.com/store/apps/details?id=net.one97.paytm" target="_blank"
+                                event-category="web_login" event-action="download_app_clicked" event-type="customEvent"
+                                event-label="android" screen-name="auth-init/QRlogin" ga-clickevent=""
+                                rel="noopener noreferrer">
+                                <img class="icon" ng-src="/pages/themesv2/images/mp-web/googleplay.svg"
+                                    src="https://accounts.paytm.com/pages/themesv2/images/mp-web/appstore.svg">
+                                <span>
+                                    Google Play
+                                </span>
+                            </a>
+                            <a href="https://apps.apple.com/bw/app/paytm-payments-bank-account/id473941634"
+                                target="_blank" event-category="web_login" event-action="download_app_clicked"
+                                event-type="customEvent" event-label="ios" screen-name="auth-init/QRlogin"
+                                ga-clickevent="" rel="noopener noreferrer">
+                                <img class="icon" ng-src="/pages/themesv2/images/mp-web/appstore.svg"
+                                    src="https://accounts.paytm.com/pages/themesv2/images/mp-web/appstore.svg">
+                                <span>
+                                    App Store
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="qrCodeContainer">
+            <button class="close" id="Closeqr" style="text-align: center;
+            line-height: 12px;color: red;">Close</button>
+            <div class="qrcodechild">
+                <img src="https://accounts.paytm.com/pages/themesv2/images/paytm-qr-logo/paytm-qr-icon.svg" id="paytm"
+                    alt="">
+                <div class="qr-container">
+                    <div>
+                        <div class="overlay-refresh" role="button" tabindex="0">
+                            <img style="margin-top: 15px;" id="qr" src="./imges/download.png">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="content">
+                        Scan QR code with Paytm App to login
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="hrdiv">
+            <hr id="qrhr">
+        </div>
+    </div>
+
+    <nav id="nav" id="navi">
+        <!-- Create navbar here make sure all id and classes name start with nav -->
+        <div style="height: 25px;background-color: #F4F4F4;" class="active"></div>
+        <div>
+            <img src="./imges/WhatsApp Image 2023-01-18 at 15.05.36.jpeg" alt="logo"
+                style="width: 100px;display: block; height: 80px;margin: auto;">
+        </div>
+    
+        <div class="navsearch">
+            <div style="display: grid;place-items: center;">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="_19km">Shop By Category</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="text" name="" id="navinput" placeholder="Search for a Product, Brand or Category">
+                    <span><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+            <div>
+                <i class="fa-light fa-list-dropdown"></i>
+                <i class="fa fa-list"></i>
+                <div class="navanchor" style="display: inline-block;">My Orders</div>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="navanchor" style="display: inline-block;">Not items in the bag</div>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-plus"></i>
+                <div class="navanchor" id="click" style="display: inline-block;">Login/SignUp</div>
+            </div>
+        </div>
     </nav>
 
     <!-- make products section below this -->
@@ -29,3 +187,8 @@
 </body>
 </html>
 <script src="./src/makeup.js"></script>
+
+
+
+<script src="./src/qrcode.js"></script>
+<script src="./src/otp.js"></script>

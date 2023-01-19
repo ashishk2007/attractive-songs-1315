@@ -1,6 +1,9 @@
 *{
     margin: 0px;padding: 0px;box-sizing: border-box;
 }
+#a{
+    display: none;
+}
 #qrparent{
     z-index: 400;
     position: fixed;
