@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
-    margin-top: 20px;
-    text-align: center;
 
 }
 #container>div{
@@ -11,5 +9,18 @@
     width: 80%;
 }
 #container>div>img{
-    width: 100%;
+    width: 80%;
+    
 }
+#container>div>div{
+    width: 50%;
+    display: flex;
+    grid-template-columns: repeat(5,1fr);
+    border: 2px solid green;
+    gap: 20px;
+}
+#container>div>button{
+    width: 100px;
+    /* font-family: sans-serif Verdana, Geneva, Tahoma, sans-serif; */
+}
+
