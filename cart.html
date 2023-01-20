@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="./styles/otp.css">
         <link rel="stylesheet" href="./styles/footer.css">
         <link rel="stylesheet" href="./styles/navbar.css">
-        <link rel="stylesheet" href="./styles/product.css">
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,7 +36,11 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        
     <style>
+        :root{
+            --fontFamily : Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+        }
         *{
             margin: 0;
             padding: 0;
@@ -50,6 +54,7 @@
            width: 95%;
            margin: auto;
            gap: 0px 20px;
+           padding-top: 30px;
           
         }
         #first-div{
@@ -94,7 +99,10 @@
             flex-direction: row;
             width: 95%;
             margin: auto;
+            padding-bottom: 20px;
+           
         }
+    
         #main img{
             width: 100%;
             margin-right: 5px;
@@ -102,16 +110,49 @@
         }
         #imageDiv{
             width: 10%;
+            padding-right: 15px;
         }
         #detailsDiv{
             width: 45%;
+            font-family: var(--fontFamily);
+            font-weight: 500;
+            font-size: 15px;
+            
+        }
+        #type{
+            font-size: 13px;
         }
         #btnDiv{
             width: 10%;
+            border: 2.5px solid whitesmoke;
+            height: 30px;
+            display: flex;
+            padding:5px;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        #minBtn,#plsBtn{
+         
+            text-align: center;
+           vertical-align:middle;
+           font-size: 28px;
+           margin-top: -18px;
+           color: rgb(161, 160, 160);
+        }
+        #plsBtn{
+            font-size: 23px;
+            margin-top: -14px;
         }
         #priceDiv{
             width :35%;
             text-align: end;
+        }
+
+        /* ----------------------------------------  */
+
+        #summaryDiv{
+            display: flex;
+            flex-direction: row;
         }
     </style>
 </head>
@@ -269,9 +310,12 @@
             <div id="address-div">
                 Address will be shown here
             </div>
+
             <div id="total-div">
                 total cart will be display here!!
             </div>
+
+            <div class="_1oZI">Return &amp; Cancellation Policy <i class="iconArrowRight _3zcY"> </i></div> 
         </div>
 
 
