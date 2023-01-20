@@ -15,7 +15,12 @@
 .swiper{
     margin: 20px 0px 20px 0px;
 }
-
+._3Xyq:hover{
+    cursor: pointer;
+}
+._3Xyq>a:hover{
+    color: #f15a22;
+}
 .jCqS_19iN{
     width: 96%;
     margin: auto;
@@ -53,5 +58,5 @@
 }
 
 ._2joD{
-    margin: 50px 0px 20px 0px;
+    margin: 50px 0px 20px 5px;
 }
