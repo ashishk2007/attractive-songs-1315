@@ -45,6 +45,19 @@ cards.forEach(element => {
     itemsCount.innerText=1;
     let plusBtn = document.createElement("button");
     plusBtn.innerText = "+";
+
+    plusBtn.addEventListener("click",()=>{
+        itemsCount.innerText++;
+        priceOfItem.innerText = `₹${element.price* +itemsCount.innerText}`
+        
+    })
+    minusBtn.addEventListener("click",()=>{
+        if(itemsCount.innerText=="1"){
+            return;
+        }
+        itemsCount.innerText--;
+        priceOfItem.innerText = `₹${element.price* +itemsCount.innerText}`
+    })
     
     btnDiv.append(minusBtn,itemsCount,plusBtn);
 

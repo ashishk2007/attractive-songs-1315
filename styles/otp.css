@@ -47,7 +47,8 @@
   text-align: center;
   border: 1px solid #ddd;
 }
-#mobileNumber{
+#mobileNumber, #name{
+  margin-top: 5px;
   height: 45px;
   width: 200px;
   border-radius: 6px;

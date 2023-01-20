@@ -40,8 +40,16 @@ i{
     justify-content: space-around;
     padding: 0px 20px;
 }
+.navsearch>div:nth-child(6){
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
 .navsearch>div:nth-child(2){
-    width: 45%;
+    width: 35%;
     height: 40px;
     padding: 10px 4px;
     border: 0.5px solid gray;
@@ -74,7 +82,7 @@ i{
     color: #222;
     font-weight: 700;
 }
-.navanchor{
+.navanchor, .navanchor>a{
     font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
