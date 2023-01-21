@@ -37,7 +37,6 @@
     transition: ease-out 0.5s;
 }
 ._2EKM>img:hover{
-    
     transform: scale(1.1);
 }
 .RcEe{
@@ -59,4 +58,44 @@
 
 ._2joD{
     margin: 50px 0px 20px 5px;
+}
+
+._1hRT{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    font-weight: 400;
+    box-sizing: border-box;
+    display: flex;
+    margin: 15px 30px;
+    max-width: 1680px;
+}
+.IpU6{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    font-weight: 400;
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: 0;
+}
+._1ExV{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-weight: 400;
+    box-sizing: border-box;
+    max-width: 1680px;
+    margin: 15px auto;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.05);
+    font-size: 1.3rem;
+    padding: 6px 10px;
+    color: #828282;
 }
