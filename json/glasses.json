@@ -6,7 +6,7 @@
        "totalreviews" : "112",
        "size" : "Medium",
        "company" : "John Jacobs",
-       "price":"1299",
+       "price":"1099",
        "frametype":"round",
        "color":"Black",
        "genger":"MF"
@@ -19,7 +19,7 @@
        "totalreviews" : "98",
        "size" : "Medium",
        "company" : "Series A",
-       "price":"1599",
+       "price":"2599",
        "frametype":"halfrim",
        "color":"Blue",
        "genger":"M"
@@ -32,7 +32,7 @@
        "totalreviews" : "220",
        "size" : "Medium",
        "company" : "Zero Power",
-       "price":"1599",
+       "price":"1089",
        "frametype":"fullrim",
        "color":"Brown",
        "genger":"MF"
@@ -45,7 +45,7 @@
        "totalreviews" : "122",
        "size" : "Wide",
        "company" : "Classic Acetate",
-       "price":"1599",
+       "price":"3599",
        "frametype":"halfrim",
        "color":"Brown",
        "genger":"F"
@@ -58,7 +58,7 @@
        "totalreviews" : "112",
        "size" : "Wide",
        "company" : "Sleek Steel",
-       "price":"1299",
+       "price":"8299",
        "frametype":"fullrim",
        "color":"Light Blue",
        "genger":"MF"
@@ -71,7 +71,7 @@
        "totalreviews" : "500",
        "size" : "Wide",
        "company" : "Zero Power",
-       "price":"1599",
+       "price":"2399",
        "frametype":"halfrim",
        "color":"Black",
        "genger":"MF"
@@ -84,7 +84,7 @@
        "totalreviews" : "65",
        "size" : "Wide",
        "company" : "Classic Acetate",
-       "price":"1599",
+       "price":"7599",
        "frametype":"fullrim",
        "color":"Deep Purple",
        "genger":"MF"
@@ -97,7 +97,7 @@
        "totalreviews" : "150",
        "size" : "Medium",
        "company" : "Series A",
-       "price":"1599",
+       "price":"5599",
        "frametype":"fullrim",
        "color":"Pink",
        "genger":"F"
@@ -110,7 +110,7 @@
        "totalreviews" : "112",
        "size" : "Extra Wide",
        "company" : "John Jacobs",
-       "price":"1599",
+       "price":"10599",
        "frametype":"fullrim",
        "color":"Black",
        "genger":"M"
@@ -123,7 +123,7 @@
        "totalreviews" : "104",
        "size" : "Medium",
        "company" : "Sleek Steel",
-       "price":"1599",
+       "price":"2599",
        "frametype":"halfrim",
        "color":"Brown",
        "genger":"MF"
@@ -136,7 +136,7 @@
        "totalreviews" : "290",
        "size" : "Medium",
        "company" : "Classic Acetate",
-       "price":"1599",
+       "price":"9599",
        "frametype":"fullrim",
        "color":"Deep Purple",
        "genger":"F"
@@ -149,7 +149,7 @@
        "totalreviews" : "78",
        "size" : "Wide",
        "company" : "John Jacobs",
-       "price":"1599",
+       "price":"1199",
        "frametype":"fullrim",
        "color":"Black",
        "genger":"M"
@@ -162,7 +162,7 @@
        "totalreviews" : "220",
        "size" : "Wide",
        "company" : "Series A",
-       "price":"1599",
+       "price":"9099",
        "frametype":"fullrim",
        "color":"Brown",
        "genger":"F"
@@ -175,7 +175,7 @@
        "totalreviews" : "220",
        "size" : "Medium",
        "company" : "Classic Acetate",
-       "price":"1599",
+       "price":"13599",
        "frametype":"fullrim",
        "color":"Black",
        "genger":"MF"
@@ -188,7 +188,7 @@
        "totalreviews" : "112",
        "size" : "Wide",
        "company" : "Sleek Steel",
-       "price":"1599",
+       "price":"7299",
        "frametype":"fullrim",
        "color":"Pink",
        "genger":"F"
