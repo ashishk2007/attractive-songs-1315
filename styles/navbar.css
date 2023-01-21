@@ -1,1 +1,98 @@
 /* Css only for navbar */
+
+#nav{
+    width: 100%;
+}
+.navsearch{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+i{
+    color: #e94c24;
+}
+.navsearch>div:nth-child(1){
+    height: 40px;
+    border: 0.5px solid gray;
+    padding: 10px 20px;
+}
+.navsearch>div:nth-child(5){
+    height: 40px;
+    padding: 10px 20px;
+}
+.navsearch>div:nth-child(3){
+    height: 40px;
+    padding: 10px 30px;
+}
+.navsearch>div:nth-child(4){
+    width: 180px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+.navsearch>div:nth-child(6){
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+.navsearch>div:nth-child(2){
+    width: 35%;
+    height: 40px;
+    padding: 10px 4px;
+    border: 0.5px solid gray;
+}
+.navsearch>div:nth-child(2)>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+#navinput{
+    width: 500px;
+    padding: 0px 10px;
+    position: relative;
+    border: none;
+}
+#navinput:focus{
+    outline-offset: 0px;
+    outline: none;
+}
+._19km{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    -webkit-box-direction: normal;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: 700;
+}
+.navanchor, .navanchor>a{
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    -webkit-box-direction: normal;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: 700;
+}
+
+   

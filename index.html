@@ -5,11 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paytm Mall</title>
+    <title>Masai Mall</title>
     <link rel="stylesheet" href="./styles/qrstyle.css">
     <link rel="stylesheet" href="./styles/otp.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/indexstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -19,7 +35,19 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="./src/jquery-3.6.3.min.js"></script>
+    <!-- <script>
+        $(function(){
+            $("#header").load("nav.html")
+        })
+    </script> -->
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
         ._3Xyq {
             width: 140px;
             height: 160px;
@@ -34,6 +62,10 @@
             width: 100%;
             /* height: 100%; */
             border-radius: 50%;
+        }
+
+        ._2zXZ {
+            color: black;
         }
     </style>
 </head>
@@ -139,8 +171,46 @@
     </div>
 
     <!-- above is qrcode popup don't do anything do it -->
-    <nav>
+    <nav id="nav" id="navi">
         <!-- Create navbar here make sure all id and classes name start with nav -->
+        <div style="height: 25px;background-color: #F4F4F4;" class="active"></div>
+        <div>
+           <a href="index.html"> <img src="./imges/WhatsApp Image 2023-01-18 at 15.05.36.jpeg" alt="logo"
+                style="width: 100px;display: block; height: 80px;margin: auto;"></a>
+        </div>
+
+        <div class="navsearch">
+            <div style="display: grid;place-items: center;">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="_19km">Shop By Category</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="text" name="" id="navinput" placeholder="Search for a Product, Brand or Category">
+                    <span><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+            <div>
+                <i class="fa-light fa-list-dropdown"></i>
+                <i class="fa fa-list"></i>
+                <div class="navanchor" style="display: inline-block;">My Orders</div>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div class="navanchor" style="display: inline-block;"><a href="./cart.html"> Not items in the bag</a>
+                </div>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-plus"></i>
+                <div class="navanchor" id="click" style="display: inline-block;">Login/SignUp</div>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <div class="navanchor" id="click"  style="display: inline-block;"><a href="./admin-page.html"> Admin </a></div>
+            </div>
+        </div>
     </nav>
 
     <!-- slider section  -->
@@ -295,22 +365,511 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+
         <!-- add slider section here and make sure all id and classes name start with slider -->
     </div>
-
-
-    <div>
-        <!-- make product slider section and make sure all id and classes name start with productslider -->
+    <div class="swiper mySwiper">
+        <div class="jCqS _19iN swiper-wrapper">
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498530/1610537092744.png?imwidth=140&amp;impolicy=hq"
+                        alt="Iconic">
+                </div>
+                <a class="_2zXZ">Iconic</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498530/1610537092744.png?imwidth=140&amp;impolicy=hq"
+                        alt="Iconic">
+                </div>
+                <a class="_2zXZ">Iconic</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498114/1610537113386.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Raymonds">
+                </div>
+                <a class="_2zXZ">Raymonds</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498115/1610537339349.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Jockey">
+                </div>
+                <a class="_2zXZ">Jockey</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498256/1620736733672.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Vero Moda">
+                </div>
+                <a class="_2zXZ">Vero Moda</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498129/1613028463583.png?imwidth=140&amp;impolicy=hq"
+                        alt="Beverly Hills Polo Club">
+                </div>
+                <a class="_2zXZ">Beverly Hills Polo Club</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498127/1610537689405.png?imwidth=140&amp;impolicy=hq"
+                        alt="Madame">
+                </div>
+                <a class="_2zXZ">Madame</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/710419/1610542731323.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Peter England">
+                </div>
+                <a class="_2zXZ">Peter England</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/710420/1610543135214.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Van Heusen">
+                </div>
+                <a class="_2zXZ">Van Heusen</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498111/1610543084890.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Louis Philippe">
+                </div>
+                <a class="_2zXZ">Louis Philippe</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/710421/1610543158966.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Planet Fashion">
+                </div>
+                <a class="_2zXZ">Planet Fashion</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498105/1610535869042.png?imwidth=140&amp;impolicy=hq"
+                        alt="109 F">
+                </div>
+                <a class="_2zXZ">109 F</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/498118/1610535851387.png?imwidth=140&amp;impolicy=hq"
+                        alt="Aurelia">
+                </div>
+                <a class="_2zXZ">Aurelia</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994263/1643711210390.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="American Eagle">
+                </div>
+                <a class="_2zXZ">American Eagle</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994264/1643711069857.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Selected homme">
+                </div>
+                <a class="_2zXZ">Selected homme</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994265/1643711263391.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Manyavar">
+                </div>
+                <a class="_2zXZ">Manyavar</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994266/1643711205459.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="La senza">
+                </div>
+                <a class="_2zXZ">La senza</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994267/1643711489659.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Major Brands">
+                </div>
+                <a class="_2zXZ">Major Brands</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994278/1643712435320.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Taneira">
+                </div>
+                <a class="_2zXZ">Taneira</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994279/1643712364578.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Spykar">
+                </div>
+                <a class="_2zXZ">Spykar</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994288/1643713188868.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Zivame">
+                </div>
+                <a class="_2zXZ">Zivame</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994298/1643713113821.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Tailorman">
+                </div>
+                <a class="_2zXZ">Tailorman</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994348/1643715968772.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Disrupt">
+                </div>
+                <a class="_2zXZ">Disrupt</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/994350/1643716033149.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Simon Carter">
+                </div>
+                <a class="_2zXZ">Simon Carter</a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
-    <section>
-        <!-- make product Section four div and make sure all id and classes name start with product section -->
-    </section>
+    <div class="swiper mySwiper">
+        <div class="jCqS _19iN swiper-wrapper">
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995524/1643867277967.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Bata">
+                </div>
+                <a class="_2zXZ">Bata</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995524/1643867277967.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Bata">
+                </div>
+                <a class="_2zXZ">Bata</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995524/1643867277967.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Bata">
+                </div>
+                <a class="_2zXZ">Bata</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995525/1643867496758.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Nike">
+                </div>
+                <a class="_2zXZ">Nike</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995526/1643867362885.png?imwidth=140&amp;impolicy=hq"
+                        alt="Puma">
+                </div>
+                <a class="_2zXZ">Puma</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995527/1643867532232.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Khadim's">
+                </div>
+                <a class="_2zXZ">Khadim's</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995528/1643867625370.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Red Chief">
+                </div>
+                <a class="_2zXZ">Red Chief</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/710655/1643866806024.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Speedo">
+                </div>
+                <a class="_2zXZ">Speedo</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995529/1643867506442.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Sports Station">
+                </div>
+                <a class="_2zXZ">Sports Station</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995530/1643867664954.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Woodland">
+                </div>
+                <a class="_2zXZ">Woodland</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/710654/1643866837835.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Metro Shoes">
+                </div>
+                <a class="_2zXZ">Metro Shoes</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/710657/1613028563419.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Mochi">
+                </div>
+                <a class="_2zXZ">Mochi</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995531/1643867698366.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Lotto">
+                </div>
+                <a class="_2zXZ">Lotto</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995533/1643867991105.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Reliance Footwear">
+                </div>
+                <a class="_2zXZ">Reliance Footwear</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995534/1643868084258.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Steve Madden">
+                </div>
+                <a class="_2zXZ">Steve Madden</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/995532/1643867743019.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Regal">
+                </div>
+                <a class="_2zXZ">Regal</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/710661/1613028718597.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="Call it Spring">
+                </div>
+                <a class="_2zXZ">Call it Spring</a>
+            </div>
+            <div class="_3Xyq swiper-slide">
+                <div class="E7nC">
+                    <img class="_1H9O"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/710662/1613028739303.jpg?imwidth=140&amp;impolicy=hq"
+                        alt="C &amp; K">
+                </div>
+                <a class="_2zXZ">C &amp; K</a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
+    <h2 class="OPyu">Grocery &amp; Home Furnishing</h2>
+    <div>
+        <div class="jCqS_19iN">
+            <div class="k50R">
+                <div class="_3M3H"><span class="_2EKM"><img role="presentation" alt="Big Bazaar"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/498479/1613247367528.png?imwidth=414&amp;impolicy=hq"></span>
+                </div>
+                <div class="RcEe">Big Bazaar</div>
+            </div>
+
+            <div class="k50R">
+                <div class="_3M3H"><span class="_2EKM"><img role="presentation" alt="Urban Ladder"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/498482/1620737072141.png?imwidth=414&amp;impolicy=hq"></span>
+                </div>
+                <div class="RcEe">Urban Ladder</div>
+            </div>
+
+            <div class="k50R">
+                <div class="_3M3H"><span class="_2EKM"><img role="presentation" alt="@home"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/498480/1620737097910.jpg?imwidth=414&amp;impolicy=hq"></span>
+                </div>
+                <div class="RcEe">@home</div>
+            </div>
+
+            <div class="k50R">
+                <div class="_3M3H"><span class="_2EKM"><img role="presentation" alt="More"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/498484/1610566898069.jpg?imwidth=414&amp;impolicy=hq"></span>
+                </div>
+                <div class="RcEe">More</div>
+            </div>
+        </div>
+
+    </div>
+    <h2 class="OPyu">Grocery &amp; Jewellery Brands</h2>
+    <div>
+        <div class="jCqS_19iN">
+            <div class="k50R">
+                <div class="_3M3H"><span class="_2EKM"><img role="presentation" alt="Big Bazaar"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/711188/1613028659969.png?imwidth=414&impolicy=hq"></span>
+                </div>
+                <div class="RcEe">Kalyan | Get 20% Cashback</div>
+            </div>
+
+            <div class="k50R">
+                <div class="_3M3H"><span class="_2EKM"><img role="presentation" alt="Urban Ladder"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/711194/1620745874093.jpg?imwidth=414&impolicy=hq"></span>
+                </div>
+                <div class="RcEe">Jewelfina</div>
+            </div>
+
+            <div class="k50R">
+                <div class="_3M3H"><span class="_2EKM"><img role="presentation" alt="@home"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/711199/1613028660058.jpg?imwidth=414&impolicy=hq"></span>
+                </div>
+                <div class="RcEe">Tanishq</div>
+            </div>
+
+            <div class="k50R">
+                <div class="_3M3H"><span class="_2EKM"><img role="presentation" alt="More"
+                            src="https://assetscdn1.paytm.com/images/catalog/view_item/711200/1620745456365.jpg?imwidth=414&impolicy=hq"></span>
+                </div>
+                <div class="RcEe">Up to 16% Cashback</div>
+            </div>
+        </div>
+
+    </div>
 
     <footer>
-        <!-- make all footer section make sure all id and classes name start with footer -->
+        <div class="_2joD">
+            <h1>Masai Mall - India’s Leading Online Shopping Experience, Brought to You by Masai</h1>
+            <p>Online shopping with Masai Mall is quick, convenient and trouble-free. You can shop for the desired
+                product right from the comfort of your home and get them delivered straight to your doorstep.</p>
+            <p>Browse Masai Mall and get access to over 65 million products ranging from smartphones, tablets to
+                laptops, sarees, kurtas &amp; kurtis to t-shirts, sneakers, sport shoes to sandals, earrings, watches to
+                fitness bands, chimneys,
+                cookware to gas stoves, dairy products, baby products to makeup kits and many more.</p>
+            <h2>What are we offering on Masaimall.com?</h2>
+            <p>Masai Mall strives hard to make your online shopping a more pleasant and cost-effective experience by
+                providing the top quality products at the best price rates in India. Our collection of products consist
+                of electronic appliances,
+                clothes, grocery, home and kitchen products, backpacks, automobiles, books and stationery, to name a
+                few.</p>
+            <p>The super value bazaar offers an extensive range of grocery products like daily food staples, ready to
+                cook food, high on nutrition food, beauty, make-up, personal care, health, baby care products and many
+                more. Also take a
+                look at the latest Automobile section that consists of cars, bikes, scooters, sports bikes, accessories,
+                riding gear and automotive care.</p>
+            <p>Shop by categories, check out all the available deals, limited period offers, cashback offers, seasonal
+                sales, and there is so much more to make your online shopping experience enjoyable &amp; gratifying!</p>
+            <h2>Benefits of shopping on Masaimall.com</h2>
+            <p><strong>User-Friendly:</strong> Leading online shopping experience in India which is simple and faster to
+                load. Shop on the go and get the products delivered in just a few easy clicks.</p>
+            <p><strong>Safe &amp; Secure Shopping:</strong> You need not worry about your account credentials or
+                personal details.<br><span class="_89BJ">Each and every transaction at Masai Mall is securely processed
+                    and you can be rest assured that your money is in safe hands.</span></p>
+            <p><strong>Check Out Closely:</strong> View products of your choice in detail with clear images and thorough
+                descriptions before buying.</p>
+            <p><strong>Multiple Payment Options:</strong> Choose a payment option of your choice i.e. Credit/Debit
+                Cards, Netbanking and UPI.<br><span class="_89BJ">Use Masai Wallet for quick checkouts &amp; hassle-free
+                    payments</span></p>
+            <p><strong>Masai Postpaid Services:</strong> Now, you can buy today and pay next month with Masai-ICICI Bank
+                Postpaid.</p>
+            <p><strong>Order History:</strong> All your orders show up at one place, you can track them or repeat them
+                with ease.<br><span class="_89BJ">Trouble-free returns, track request &amp; replacement of your
+                    orders</span></p>
+            <p><strong>24x7 Customer Care:</strong> For all your queries and concerns regarding your shopping orders,
+                head over to<a href="http://Masaimall.com/care"> Masaimall.com/care</a> or call us at 01204606060
+                anytime</p>
+            <p>The products paired with amazing deals are a topping on the cake that no one would want to miss. Masai
+                Mall World Store offers access to imported products ranging from beauty and personal care, watches,
+                jewellery and so much
+                more that too at exclusive price rates.</p>
+            <p>Masai Mall presents benefits like faster delivery with easy returns and payment options. Moreover, you
+                can also take delight in<a href="http://Masaimall.com"> online shopping</a> with cash on delivery (COD)
+                option as &amp;
+                when needed.</p>
+        </div>
+        <div class="_1hRT">
+            <div class="IpU6 _17Uc"></div>
+        </div>
+        <div class="_1ExV">Cashback would be added as Paytm Cash, which is One97 Communications Ltd loyalty program. It
+            can be used to pay for goods &amp; services sold by merchants that accept ‘Pay with Paytm’</div>
+
+        <div class="_3yCU">
+            <div class="_142L">
+                <div class="_2LhZ"><a href="https://paytmmall.com/about-us/" target="_self">About Us</a><a
+                        href="https://paytmmall.com/partner-with-us" target="_self">Partner with us</a><a
+                        href="https://paytmmall.com/company/terms-and-conditions" target="_self">Terms &amp;
+                        Conditions</a><a href="https://blog.paytmmall.com/" target="_blank">Blog</a><a
+                        href="https://paytmmall.com/press" target="_blank">Media</a><a href="https://paytmmall.com/care"
+                        target="_self">24x7 Help</a><a href="https://paytmmall.com/about-us/our-policies/#grievance"
+                        target="_self">Grievance policy</a><a href="https://paytmmall.com/offer/bug-bounty/"
+                        target="_self"> Bug bounty</a><a href="/static-page/return-policy" target="_self">
+                        Return/Cancellation policy</a></div>
+                <div class="_1afe"><a rel="nofollow"
+                        href="https://itunes.apple.com/in/app/paytm-mall-bazaar/id1157845438?mt=8"><i
+                            class="iconApple _2XC0"></i></a><a rel="nofollow"
+                        href="https://www.microsoft.com/en-us/store/p/paytm-mall-bazaar/9p69t80kn9r7"><i
+                            class="iconWindows _7qWw"></i></a><a rel="nofollow"
+                        href="https://play.google.com/store/apps/details?id=com.paytmmall"><i
+                            class="iconAndroid _39Ix"></i></a><a href="/" class="z7-a"></a><a rel="nofollow"
+                        href="https://twitter.com/PaytmMall"><i class="iconTwitter _3Iep"></i></a><a rel="nofollow"
+                        href="https://www.facebook.com/paytmmall"><i class="iconFacebook adUs"></i></a><a rel="nofollow"
+                        href="https://www.instagram.com/paytmmall/"><i class="iconInstagram _2a_O"></i></a><a
+                        rel="nofollow" href="https://www.youtube.com/c/paytmmallyt"><i
+                            class="iconYoutube _1dnb"></i></a></div>
+            </div>
+        </div>
     </footer>
+
+
+
 
 </body>
 <script src="./src/qrcode.js"></script>
@@ -327,7 +886,7 @@
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 12,
+        slidesPerView: 10,
         spaceBetween: 30,
         slidesPerGroup: 3,
         loop: true,

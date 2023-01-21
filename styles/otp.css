@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 #otp{
+  z-index: 300;
   position: fixed;
   display: grid;
   place-items: center;
   font-family: 'Poppins', 'sans-serif';
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 :where(.otpContainer, #otpform, .input-field, header) {
   display: flex;
@@ -17,7 +19,7 @@
   padding: 30px 65px;
   border-radius: 12px;
   row-gap: 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
 }
 .otpCcontainer header {
   height: 65px;
@@ -45,6 +47,16 @@
   text-align: center;
   border: 1px solid #ddd;
 }
+#mobileNumber, #name{
+  margin-top: 5px;
+  height: 45px;
+  width: 200px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
 .input-field input:focus {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
@@ -52,7 +64,7 @@
 .input-field input::-webkit-outer-spin-button {
   display: none;
 }
-#otpbutton{
+#otpbutton,#getotp{
   margin-top: 25px;
   width: 100%;
   color: #fff;
@@ -64,17 +76,19 @@
   background: #6e93f7;
   transition: all 0.2s ease;
 }
-#otpbutton:active{
+
+
+#otpbutton:active ,#getotp:active{
   font-size: 0.8rem;
 }
-#otpbutton:hover{
+#otpbutton:hover, #getotp:hover{
   background: #0e4bf1;
 }
 .otpclose{
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.1);
+  /* background-color: rgba(0, 0, 0, 0.1); */
   font-size: 2rem;
   color: red;
 
