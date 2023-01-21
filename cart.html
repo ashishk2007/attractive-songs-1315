@@ -55,21 +55,23 @@
            margin: auto;
            gap: 0px 20px;
            padding-top: 30px;
-          
+               
         }
+
         #first-div{
             width: 70%;
             background-color: white;
+           
         }
         #first-top-div{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             width: 95%;
             margin: auto;
         }
         #no-items,#payment-div{
-            margin: 20px;
-            padding-bottom: 20px;
+            margin: 15px;
+            padding-bottom: 15px;
             line-height: 1.5;
             font-size: 23px;
         }
@@ -90,7 +92,7 @@
             display: flex;
             flex-direction: column;
         }
-        #address-div,#total-div{
+        #total-div{
             background-color: white;
         }
         #main{
@@ -98,7 +100,7 @@
             flex-direction: row;
             width: 95%;
             margin: auto;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
            
         }
     
@@ -142,9 +144,13 @@
             font-size: 23px;
             margin-top: -14px;
         }
+
         #priceDiv{
             width :35%;
             text-align: end;
+            margin-right: 10px;
+            font-size: 18px;
+            font-weight: 700;
         }
 
         /* ----------------------------------------  */
@@ -153,6 +159,90 @@
             display: flex;
             flex-direction: row;
         }
+        #total-div{
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        .Qwer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: var(--fontFamily);
+            font-size: medium;
+          margin: 10px;
+        }
+        #free{
+            color: rgb(90, 182, 90);
+            font-weight: 600;
+        }
+        .amts{
+            font-weight: 600;
+            font-size: large;
+        }
+        #payable{
+            font-weight: 650;
+        }
+
+        #shopping{
+            font-weight: 600;
+            color: #ef4e28;
+            text-align: center;
+            font-size: medium;
+        }
+        #shop:hover{
+            text-decoration: none;
+        }
+        #selecAdd{
+            background-color: #ef4e28;
+            text-align: center;
+            color: white;
+            font-family: var(--fontFamily);
+            font-weight: 700;
+            padding: 10px;
+            margin:35px 35px 35px 0;
+            width: 100%;
+        }
+        #paySummary{
+            font-family: var(--fontFamily);
+            font-weight: 440;
+            font-size: large;
+            display: flex;
+            flex-direction: row;
+        }
+        .path3{
+            border:1.5px solid black;
+            padding: 4px 8px;
+            border-radius: 110%;
+            color: #ef4e28;
+
+        }
+        #RsIcon{
+            background-color:#fde9e5;
+            width: 40px;
+            line-height: 50px;
+            text-align: center;
+            vertical-align: center;
+            border-radius: 100%;
+            margin-right: 15px;
+        }
+        #summary{
+            margin-top: 10px;
+            font-size: 22px;
+        }
+        #remove,#save{
+            border: none;
+            font-weight: 400;
+            font-size: small;
+            vertical-align: bottom;
+            margin-top: 40px;
+        }
+        #save{
+            padding-left: 10px;
+        }
+        #prod:hover{
+            text-decoration: none;
+        }
+ 
     </style>
 </head>
 <body>
@@ -296,7 +386,7 @@
         <div id="first-div">
             <div id="first-top-div">
                 <div id="no-items"><strong id="length"> </strong> in your bag</div>
-                <div id="payment-div">Proceed to Pay ₹<span id="amount"></span></div>
+                <a id="prod" href="./checkout.html"><div id="payment-div">Proceed to Pay ₹<span id="amount"></span></div></a>
             </div>  
             <hr>
 
@@ -304,15 +394,33 @@
         </div>
 
         <div id="second-div">
-            <div id="address-div">
-                Address will be shown here
-            </div>
-
             <div id="total-div">
-                total cart will be display here!!
+                <div id="paySummary">
+                    <!-- <img src="./imges/delete-icon.png" alt="" width="40px" height="40px"> -->
+                    <div id="RsIcon"><span class="path3">₹</span></div>
+                   <div id="summary"> Payment Summary</div>
+                </div>
+                <hr>
+                <div class="Qwer" id="bagT">
+                    <div class="Asdf">Bag Total </div>
+                    <div class="amts">₹ <span id="payAmt"> </span></div>
+                </div>
+                <div class="Qwer">
+                    <div class="Asdf">Shipping Charges</div>
+                    <div id="free">Free</div>
+                </div>
+                <hr>
+                <div class="Qwer">
+                    <div id="payable"> Amount Payable </div>
+                    <div class="amts">₹ <span id="payAmt2"></span></div>
+                </div>
+                <hr>
+
+                <div id="selecAdd">Select Address</div>
+                <a href="./index.html" id="shop"><div id="shopping">Continue Shopping > </div></a>
             </div>
 
-            <div class="_1oZI">Return &amp; Cancellation Policy <i class="iconArrowRight _3zcY"> </i></div> 
+            <!-- <div class="_1oZI">Return &amp; Cancellation Policy <i class="iconArrowRight _3zcY"> </i></div>  -->
         </div>
 
 
