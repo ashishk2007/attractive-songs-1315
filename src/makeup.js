@@ -49,7 +49,7 @@ function sliderrange(){
 // console.log(input.value)
 
 let bag = [];
-let container = document.querySelector("#container");
+let container = document.querySelector("#product-container");
 fetch("json/makeup.json")
   .then((res) => {
     return res.json()
@@ -90,7 +90,9 @@ function display(data) {
 
     let button = document.createElement("button")
     button.textContent = "Tap To Add";
-    button.style.backgroundColor = "green";
+    button.style.backgroundColor = "#f15a22";
+    button.style.border="1px solid black";
+    button.style.color="white"
     button.style.borderRadius = "10px"
     button.style.height = "30px"
     button.addEventListener("click", function () {
@@ -172,7 +174,7 @@ function display(data) {
 
    function search(){
     container.innerHTML=null
-    let q = document.querySelector("input").value;
+    let q = document.querySelector(".input").value;
     console.log("working")
     let newdata = bag.filter(function(element){
      return element.name.toLowerCase().includes(q.toLowerCase())

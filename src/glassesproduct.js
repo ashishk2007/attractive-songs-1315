@@ -1,7 +1,7 @@
 // console.log("hiiiii")
 let btn = document.querySelector("#submit")
 let bag = [];
-let container = document.querySelector("#container");
+let container = document.querySelector("#product-container");
 fetch("json/glasses.json")
   .then((res) => {
     return res.json()
@@ -89,11 +89,13 @@ function display(data) {
     let colour = document.createElement("h3")
     colour.textContent = element.color
     let frametype = document.createElement("h3")
-    frametype.textContent = element.frametype
-
+    frametype.textContent ="Frametype  "+ element.frametype
+   
+    frametype.style.fontFamily="sans-serif Verdana, Geneva, Tahoma, sans-serif"
     let genger= document.createElement("h3")
-    genger.textContent = element.genger
-
+    genger.textContent ="Size = "+ element.genger
+    genger.style.fontWeight = "500"
+    genger.style.fontFamily="sans-serif Verdana, Geneva, Tahoma, sans-serif"
     let category = document.createElement("p")
     category.textContent = element.company
     category.style.fontSize = "20px";
@@ -108,7 +110,9 @@ function display(data) {
 
     let button = document.createElement("button")
     button.textContent = "Tap To Add";
-    button.style.backgroundColor = "green";
+    button.style.backgroundColor = "#f15a22";
+    button.style.border="1px solid black";
+    button.style.color="white"
     button.style.borderRadius = "10px"
     button.style.height = "30px"
     button.addEventListener("click", function () {
@@ -188,10 +192,10 @@ function display(data) {
 
    function search(){
     container.innerHTML=null
-    let q = document.querySelector("input").value;
+    let q = document.querySelector(".input").value;
     console.log("working")
     let newdata = bag.filter(function(element){
-     return element.name.toLowerCase().includes(q.toLowerCase())
+     return element.company.toLowerCase().includes(q.toLowerCase())
      
    })
      display(newdata)
