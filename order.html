@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Order</title>
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/qrstyle.css">
@@ -34,217 +34,58 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" ></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-        
-    <style>
-        :root{
-            --fontFamily : Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
-        }
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            background-color: white;
-        }
-        body{
-            background-color: whitesmoke;
-        }
-
-        #Product-container{
-           display: flex;
-           flex-direction: row;
-           margin: auto;
-           gap: 0px 20px;
-           padding-top: 30px;
-               
-        }
-
-        #first-div{
-            width: 70%;
-            background-color: white;
-           
-        }
-        #first-top-div{
-            display: flex;
-            justify-content: space-between;
-            width: 95%;
-            margin: auto;
-        }
-        #no-items,#payment-div{
-            margin: 15px;
-            padding-bottom: 15px;
-            line-height: 1.5;
-            font-size: 23px;
-        }
-       #payment-div{
-        border: 1.5px solid #ef4e28;
-        color: #ef4e28;
-        align-items: left;
-        font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;;
-       
-        padding: 12px 20px;
-        font-size: 15px;
-        font-weight: 500;
-
-       }
-        #second-div{
-            width: 30%;
-            gap: 20px 0px;
-            display: flex;
-            flex-direction: column;
-        }
-        #total-div{
-            background-color: white;
-        }
-        #main{
-            display: flex;
-            flex-direction: row;
-            width: 95%;
-            margin: auto;
-            padding-bottom: 40px;
-           
-        }
-    
-        #main img{
-            width: 100%;
-            margin-right: 5px;
-            padding-right: 5px;
-        }
-        #imageDiv{
-            width: 10%;
-            padding-right: 15px;
-        }
-        #detailsDiv{
-            width: 45%;
-            font-family: var(--fontFamily);
-            font-weight: 500;
-            font-size: 15px;
-            
-        }
-        #type{
-            font-size: 13px;
-        }
-        #btnDiv{
-            width: 10%;
-            border: 2.5px solid whitesmoke;
-            height: 30px;
-            display: flex;
-            padding:5px;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-        #minBtn,#plsBtn{
-         
-            text-align: center;
-           vertical-align:middle;
-           font-size: 28px;
-           margin-top: -18px;
-           color: rgb(161, 160, 160);
-        }
-        #plsBtn{
-            font-size: 23px;
-            margin-top: -14px;
-        }
-
-        #priceDiv{
-            width :35%;
-            text-align: end;
-            margin-right: 10px;
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        /* ----------------------------------------  */
-
-        #summaryDiv{
-            display: flex;
-            flex-direction: row;
-        }
-        #total-div{
-            margin-right: 15px;
-            margin-left: 15px;
-        }
-        .Qwer{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            font-family: var(--fontFamily);
-            font-size: medium;
-          margin: 10px;
-        }
-        #free{
-            color: rgb(90, 182, 90);
-            font-weight: 600;
-        }
-        .amts{
-            font-weight: 600;
-            font-size: large;
-        }
-        #payable{
-            font-weight: 650;
-        }
-
-        #shopping{
-            font-weight: 600;
-            color: #ef4e28;
-            text-align: center;
-            font-size: medium;
-        }
-        #shop:hover{
-            text-decoration: none;
-        }
-        #selecAdd{
-            background-color: #ef4e28;
-            text-align: center;
-            color: white;
-            font-family: var(--fontFamily);
-            font-weight: 700;
-            padding: 10px;
-            margin:35px 35px 35px 0;
-            width: 100%;
-        }
-        #paySummary{
-            font-family: var(--fontFamily);
-            font-weight: 440;
-            font-size: large;
-            display: flex;
-            flex-direction: row;
-        }
-        .path3{
-            border:1.5px solid black;
-            padding: 4px 8px;
-            border-radius: 110%;
-            color: #ef4e28;
-
-        }
-        #RsIcon{
-            background-color:#fde9e5;
-            width: 40px;
-            line-height: 50px;
-            text-align: center;
-            vertical-align: center;
-            border-radius: 100%;
-            margin-right: 15px;
-        }
-        #summary{
-            margin-top: 10px;
-            font-size: 22px;
-        }
-        #remove,#save{
-            border: none;
-            font-weight: 400;
-            font-size: small;
-            vertical-align: bottom;
-            margin-top: 40px;
-        }
-        #save{
-            padding-left: 10px;
-        }
-        #prod:hover{
-            text-decoration: none;
-        }
- 
-    </style>
 </head>
+<style>
+    #product-container{
+        width: 100%;
+    }
+    .card {
+    width: 25%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    border-color: #333;
+}
+
+.card-img-container {
+    width:100%;
+    height: auto;
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+.card-brand {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-product {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    font-size: 16px;
+    color: #999;
+}
+
+.card-original-price {
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.card-discount-price {
+    color: #333;
+}
+ 
+  </style>
 <body>
     <div class="main" id="qrparent" style="background-color: #F8F9FC;">
         <div class="menuContainer">
@@ -372,7 +213,7 @@
             </div>
             <div>
                 <i class="fa-solid fa-bag-shopping"></i>
-                <div class="navanchor" style="display: inline-block;"><a href="./cart.html" id="cartlength"> Not items in the bag</a>
+                <div class="navanchor" style="display: inline-block;"><a href="./cart.html"> Not items in the bag</a>
                 </div>
             </div>
             <div>
@@ -387,61 +228,48 @@
     </nav>
 
 
-    <div id="Product-container">
-        <div id="first-div">
-            <div id="first-top-div">
-                <div id="no-items"><strong id="length"> </strong> in your bag</div>
-                <a id="prod" href="./checkout.html"><div id="payment-div">Proceed to Pay ₹<span id="amount"></span></div></a>
-            </div>  
-            <hr>
+    <div id="product-container"></div>
 
-            <div id="item-container">  </div>
-        </div>
-
-        <div id="second-div">
-            <div id="total-div">
-                <div id="paySummary">
-                    <!-- <img src="./imges/delete-icon.png" alt="" width="40px" height="40px"> -->
-                    <div id="RsIcon"><span class="path3">₹</span></div>
-                   <div id="summary"> Payment Summary</div>
-                </div>
-                <hr>
-                <div class="Qwer" id="bagT">
-                    <div class="Asdf">Bag Total </div>
-                    <div class="amts">₹ <span id="payAmt"> </span></div>
-                </div>
-                <div class="Qwer">
-                    <div class="Asdf">Shipping Charges</div>
-                    <div id="free">Free</div>
-                </div>
-                <hr>
-                <div class="Qwer">
-                    <div id="payable"> Amount Payable </div>
-                    <div class="amts">₹ <span id="payAmt2"></span></div>
-                </div>
-                <hr>
-
-                <a href="./checkout.html" style="text-decoration: none;"><div id="selecAdd" >Select Address</div></a>
-                <a href="./index.html" id="shop"><div id="shopping">Continue Shopping > </div></a>
-            </div>
-
-            <!-- <div class="_1oZI">Return &amp; Cancellation Policy <i class="iconArrowRight _3zcY"> </i></div>  -->
-        </div>
-
-
-    </div>
-    
-
-    <!-- //make cart section below this -->
-
-    <!-- CREATE cart here -->
-
-
-    <footer>
-        <!-- footer section will be copied from home page don't do anything here -->
-    </footer>
 </body>
 </html>
-<script src="./src/cart.js"></script>
-<script src="./src/qrcode.js"></script>
-<script src="./src/otp.js"></script>
+<script>
+
+let container = document.querySelector("#product-container");
+let data =JSON.parse(localStorage.getItem("orderproduct"))|| [];
+console.log(data);
+display(data);
+
+
+function display(data) {
+    console.log(data);
+   let str = data.map(item => {
+    return `
+    <!-- <div class="card">
+        <a href="..." class="card-link">
+            <div class="card-img-container">
+                <img src="${item.image}">
+            </div>
+            <div class="card-content">
+                <div class="card-brand">${item.title}</div>
+                <div class="card-product">${item.description}</div>
+                <div class="card-price">
+                    <span class="card-original-price">${item.price}</span>
+                </div>
+            </div>
+        </a>
+    </div> -->`
+   })
+
+   container.innerHTML = str.join(" ");
+}
+
+
+
+
+
+
+
+
+
+
+   
