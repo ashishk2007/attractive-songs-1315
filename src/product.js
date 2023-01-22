@@ -93,7 +93,9 @@ function display(data) {
 
     let button = document.createElement("button")
     button.textContent = "Tap To Add";
-    button.style.backgroundColor = "green";
+    button.style.backgroundColor = "#f15a22";
+    button.style.border="1px solid black";
+    button.style.color="white"
     button.style.borderRadius = "10px"
     button.style.height = "30px"
     button.addEventListener("click", function () {

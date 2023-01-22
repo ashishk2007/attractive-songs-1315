@@ -242,7 +242,7 @@ color: white;
 
 .brandspart{
   display: flex;
-  border: 2px solid green;
+  border: 2px solid rgba(250, 157, 18, 0.884);
 }
 .brandspart>button{
   margin-left: 250px;
@@ -253,7 +253,7 @@ color: white;
 }
 .brandspart>button:hover{
   cursor: pointer;
-  color: green;
+  color: white;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
@@ -287,7 +287,7 @@ color: white;
   color: black;
   background-color: white;
   height: 40px;
-  border: 2px solid green;
+  border: 2px solid white;
   border-radius: 5px;
   position: relative;
   top: 60px;
@@ -324,7 +324,7 @@ right: 80px;
   width: 50%;
   display: flex;
   grid-template-columns: repeat(5,1fr);
-  border: 2px solid green;
+  border: 2px solid white;
   gap: 20px;
 }
 #product-container>div>button{
@@ -353,11 +353,11 @@ form>div{
 font-size: 20px;
 font-family: sans-serif Verdana, Geneva, Tahoma, sans-serif;
 font-weight: 900;
-border: 2px solid green;
+border: 2px solid white;
 height: 35px;
 }
 .input{
-  border:2px solid green;
+  border:2px solid white;
   margin-top: 30px;
   width: 370px;
   height: 30px;
@@ -396,5 +396,5 @@ height: 35px;
 }
 .product-footer:hover{
   cursor: pointer;
-  color: greenyellow;
+  color: whiteyellow;
 }
