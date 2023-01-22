@@ -36,12 +36,110 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     </head>
 <body>
-  <nav id="nav" id="navi">
+  <div class="main" id="qrparent" style="background-color: #F8F9FC;">
+    <div class="menuContainer">
+        <div class="loginLeftSectionContainer">
+            <p class="heading ng-scope">Login to Paytm Mall on your computer</p>
+            <div class="ng-scope">
+                <div class="loginSteps">
+                    <ul>
+                        <li>
+                            <span class="index">
+                                1.
+                            </span>
+                            <span class="text">
+                                Open Paytm App
+                            </span>
+                        </li>
+                        <li>
+                            <span class="index">
+                                2.
+                            </span>
+                            <span class="text">
+                                Tap Scan <img class="icon" ng-src="/pages/themesv2/images/mp-web/q-rcode.svg"
+                                    src="https://accounts.paytm.com/pages/themesv2/images/mp-web/q-rcode.svg">
+                                option
+                                available
+                                at the bottom
+                            </span>
+                        </li>
+                        <li>
+                            <span class="index">
+                                3.
+                            </span>
+                            <span class="text">
+                                Point Paytm Scan at QR Code to login
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="watchVideoButton">
+                    <img ng-if="isHowToLoginAllowed=='true'" ng-click="toggleIntroVideo()" class="icon ng-scope"
+                        ng-src="/pages/themesv2/images/mp-mall/video-icon.svg" role="button" tabindex="0"
+                        src="https://accounts.paytm.com/pages/themesv2/images/mp-mall/video-icon.svg">
+                    <span ng-if="isHowToLoginAllowed=='true'" ng-click="toggleIntroVideo()" class="ng-scope"
+                        role="button" tabindex="0">
+                        Watch Video
+                </div>
+                <div class="ctaArea">
+                    <div class="cta-description">To create an account download Paytm App</div>
+                    <div class="actionContainer">
+                        <a href="https://play.google.com/store/apps/details?id=net.one97.paytm" target="_blank"
+                            event-category="web_login" event-action="download_app_clicked" event-type="customEvent"
+                            event-label="android" screen-name="auth-init/QRlogin" ga-clickevent=""
+                            rel="noopener noreferrer">
+                            <img class="icon" ng-src="/pages/themesv2/images/mp-web/googleplay.svg"
+                                src="https://accounts.paytm.com/pages/themesv2/images/mp-web/appstore.svg">
+                            <span>
+                                Google Play
+                            </span>
+                        </a>
+                        <a href="https://apps.apple.com/bw/app/paytm-payments-bank-account/id473941634"
+                            target="_blank" event-category="web_login" event-action="download_app_clicked"
+                            event-type="customEvent" event-label="ios" screen-name="auth-init/QRlogin"
+                            ga-clickevent="" rel="noopener noreferrer">
+                            <img class="icon" ng-src="/pages/themesv2/images/mp-web/appstore.svg"
+                                src="https://accounts.paytm.com/pages/themesv2/images/mp-web/appstore.svg">
+                            <span>
+                                App Store
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qrCodeContainer">
+        <button class="close" id="Closeqr" style="text-align: center;
+        line-height: 12px;color: red;">Close</button>
+        <div class="qrcodechild">
+            <img src="https://accounts.paytm.com/pages/themesv2/images/paytm-qr-logo/paytm-qr-icon.svg" id="paytm"
+                alt="">
+            <div class="qr-container">
+                <div>
+                    <div class="overlay-refresh" role="button" tabindex="0">
+                        <img style="margin-top: 15px;" id="qr" src="./imges/download.png">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="content">
+                    Scan QR code with Paytm App to login
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="hrdiv">
+        <hr id="qrhr">
+    </div>
+</div>
+<nav id="nav" id="navi">
     <!-- Create navbar here make sure all id and classes name start with nav -->
     <div style="height: 25px;background-color: #F4F4F4;" class="active"></div>
     <div>
-        <img src="./imges/WhatsApp Image 2023-01-18 at 15.05.36.jpeg" alt="logo"
-            style="width: 100px;display: block; height: 80px;margin: auto;">
+       <a href="index.html"> <img src="./imges/WhatsApp Image 2023-01-18 at 15.05.36.jpeg" alt="logo"
+            style="width: 100px;display: block; height: 80px;margin: auto;"></a>
     </div>
 
     <div class="navsearch">
@@ -64,11 +162,16 @@
         </div>
         <div>
             <i class="fa-solid fa-bag-shopping"></i>
-            <div class="navanchor" style="display: inline-block;">Not items in the bag</div>
+            <div class="navanchor" style="display: inline-block;"><a href="./cart.html"> Not items in the bag</a>
+            </div>
         </div>
         <div>
             <i class="fa-solid fa-user-plus"></i>
             <div class="navanchor" id="click" style="display: inline-block;">Login/SignUp</div>
+        </div>
+        <div>
+            <i class="fa-solid fa-user"></i>
+            <div class="navanchor" id="click"  style="display: inline-block;"><a href="./admin-page.html"> Admin </a></div>
         </div>
     </div>
 </nav>

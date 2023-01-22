@@ -80,7 +80,7 @@ function display(data) {
 
     let div = document.createElement("div");
     let image = document.createElement("img")
-    image.setAttribute("src",element.img)
+    image.setAttribute("src",element.image)
     
     let card = document.createElement("div");
    
@@ -195,7 +195,7 @@ function display(data) {
     let q = document.querySelector(".input").value;
     console.log("working")
     let newdata = bag.filter(function(element){
-     return element.company.toLowerCase().includes(q.toLowerCase())
+     return element.description.toLowerCase().includes(q.toLowerCase())
      
    })
      display(newdata)

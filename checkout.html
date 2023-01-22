@@ -322,7 +322,7 @@
 <script>
 let submit = document.querySelector("form");
 
-
+let data = JSON.parse(localStorage.getItem("product"))|| [];
 let success = document.getElementById("success-container");
 let checkout = document.getElementById("checkoutContainer");
 
@@ -347,6 +347,8 @@ submit.addEventListener("submit",(e)=>{
         payment: payment,
     }
 localStorage.setItem("address",JSON.stringify(obj));
+data=[];
+localStorage.setItem("product",JSON.stringify(data));
 window.location = "success.html";
 })
 </script>

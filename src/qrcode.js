@@ -43,7 +43,7 @@
               <i class="bx bxs-check-shield"></i>
             </header>
             <h4>Enter OTP Code</h4>
-            <form id="otpform" action="#">
+            <form id="otpform" >
               <div class="input-field">
                 <input class="otpInput" type="number" />
                 <input class="otpInput" type="number"/>
