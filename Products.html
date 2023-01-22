@@ -81,149 +81,197 @@
         <!-- append here -->
     </div>
     
-        <div id="sort">
-          <select class="sort">
-            <option class="sorting" value="">Sort By Relevance</option>
-            <option class="sorting" value="LTH">Low To High Price</option>
-            <option class="sorting" value="HTL">High To Low Price</option>
-          </select>
+      <div id="sort">
+        <select class="sort">
+          <option class="sorting" value="">Sort By Relevance</option>
+          <option class="sorting" value="LTH">Low To High Price</option>
+          <option class="sorting" value="HTL">High To Low Price</option>
+        </select>
+      </div>
+     <div id="product">
+      <div class="wrapper">
+        <div class="dropdown">
+          <!-- <button </button> -->
+          <p class="dropbtn">Mens World </p>
+          <div class="dropdown-content">
+            <a class="a" href="#">Mens Accesories</a>
+            <a href="#">Mens Shades</a>
+            <a href="#">Man Shoes</a>
+            <a href="#">Mens Shirts</a>
+            <a href="#">Mens T-Shirts</a>
+            <a href="#">Man Suits</a>
+            <a href="#">Mens Footwear</a>
+            <a href="#">Mens Jackets</a>
+            <a href="#">Man Wallet</a>
+          </div>
         </div>
-       <div id="product">
-        <div class="wrapper">
-          <div class="dropdown">
-            <!-- <button </button> -->
-            <p class="dropbtn">Mens World </p>
-            <div class="dropdown-content">
-              <a class="a" href="#">Mens Accesories</a>
-              <a href="#">Mens Shades</a>
-              <a href="#">Man Shoes</a>
-              <a href="#">Mens Shirts</a>
-              <a href="#">Mens T-Shirts</a>
-              <a href="#">Man Suits</a>
-              <a href="#">Mens Footwear</a>
-              <a href="#">Mens Jackets</a>
-              <a href="#">Man Wallet</a>
-            </div>
-          </div>
-          <!-- <input type="text" placeholder="Search Brand">
-          <div id="brands">
-           <div class="brandspart">
-            <h3>Brands</h3>
-            <button id="display">+</button>
-           </div>
-            <label class="container">
-              7 DIAMONDS
-              <input type="checkbox" checked="checked">
-              <span class="checkmark"></span>
-            </label>
-            
-            <label class="container">Levi's
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            
-            <label class="container">Joe's
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-            
-            <label class="container">Nike
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          -->
-          <div>
-
+        <!-- <input type="text" placeholder="Search Brand">
+        <div id="brands">
+         <div class="brandspart">
+          <h3>Brands</h3>
+          <button id="display">+</button>
+         </div>
+          <label class="container">
+            7 DIAMONDS
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
           
-          <form>
-            
-              <legend id="brand">Select Brand Here <span  id="brandspan">+</span></legend>
-    
-              <div class="toggle" >
-                <input class="input" oninput="search()" type="text" placeholder="search Brand">
-              </div>
-    
-              <div class="toggle" >
-                <input type="checkbox" id="tickbar" name="source" value="Nike">
-                <label for="instagram">Nike</label>
-              </div>
-              <div class="toggle" >
-                <input type="checkbox" id="tickbar" name="source" value="Levi's">
-                <label for="facebook">Levi's</label>
-              </div>
-              <div class="toggle" >
-                <input type="checkbox" id="tickbar" name="source" value="7 DIAMONDS">
-                <label for="search-engine">7 DIAMONDS</label>
-              </div>
-              <div class="toggle" >
-                <input type="checkbox" id="tickbar" name="source" value="Joe's">
-                <label for="word-of-mouth">Joe's</label>
-              </div>
-              <div class="toggle" >
-                <input type="checkbox" id="tickbar" name="source" value="NORDSTROM">
-                <label for="press">NORDSTROM</label>
-              </div>
-              <div class="toggle" >
-                <input type="checkbox" id="tickbar" name="source" value="SCHOTT NYC">
-                <label for="event">SCHOTT NYC</label>
-              </div>
-              <div class="toggle" >
-                <input type="checkbox" id="tickbar" name="source" value="VINCE">
-                <label for="billboard">VINCE</label>
-              </div>
-              <div>
-                <button id="tapto" type="submit">Tap To Filter</button>
-              </div>
-              <!-- </fieldset> -->
-            </form>
+          <label class="container">Levi's
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="container">Joe's
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="container">Nike
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
         </div>
-          <header>
-            <h2>Price Range</h2>
-            <p>Use slider or enter min and max price</p>
-          </header>
-          <div class="price-input">
-            <div class="field">
-              <span>Min</span>
-              <input type="number" class="input-min" value="2500">
+        -->
+        <form>
+          
+            <legend id="brand">Select Brand Here <span  id="brandspan">+</span></legend>
+  
+            <div class="toggle" >
+              <input class="input" oninput="search()" type="text" placeholder="search Brand">
             </div>
-            <div class="separator">-</div>
-            <div class="field">
-              <span>Max</span>
-              <input type="number" class="input-max" value="7500">
+  
+            <div class="toggle" >
+              <input type="checkbox" id="tickbar" name="source" value="Nike">
+              <label for="instagram">Nike</label>
             </div>
-          </div>
-          <div class="slider">
-            <div class="progress"></div>
-          </div>
-          <div class="range-input">
-            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-          </div>
-          <button id="submit">Filter</button>
-        </div>
-        <div>
-    
-        </div>
+            <div class="toggle" >
+              <input type="checkbox" id="tickbar" name="source" value="Levi's">
+              <label for="facebook">Levi's</label>
+            </div>
+            <div class="toggle" >
+              <input type="checkbox" id="tickbar" name="source" value="7 DIAMONDS">
+              <label for="search-engine">7 DIAMONDS</label>
+            </div>
+            <div class="toggle" >
+              <input type="checkbox" id="tickbar" name="source" value="Joe's">
+              <label for="word-of-mouth">Joe's</label>
+            </div>
+            <div class="toggle" >
+              <input type="checkbox" id="tickbar" name="source" value="NORDSTROM">
+              <label for="press">NORDSTROM</label>
+            </div>
+            <div class="toggle" >
+              <input type="checkbox" id="tickbar" name="source" value="SCHOTT NYC">
+              <label for="event">SCHOTT NYC</label>
+            </div>
+            <div class="toggle" >
+              <input type="checkbox" id="tickbar" name="source" value="VINCE">
+              <label for="billboard">VINCE</label>
+            </div>
+            <div>
+              <button id="tapto" type="submit">Tap To Filter</button>
+            </div>
+            <!-- </fieldset> -->
+          </form>
         
+<<<<<<< HEAD
         
         <!-- make products section below this -->
         <div id="product-container">
             <!-- append here -->
+=======
+        <header>
+          <h2>Price Range</h2>
+          <p>Use slider or enter min and max price</p>
+        </header>
+        <div class="price-input">
+          <div class="field">
+            <span>Min</span>
+            <input type="number" class="input-min" value="2500">
+          </div>
+          <div class="separator">-</div>
+          <div class="field">
+            <span>Max</span>
+            <input type="number" class="input-max" value="7500">
+          </div>
+>>>>>>> 7468c72d1f449d47ea96c44c4467c8b870a6a296
         </div>
-       
-        
+        <div class="slider">
+          <div class="progress"></div>
+        </div>
+        <div class="range-input">
+          <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+          <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+        </div>
+        <button id="submit">Filter</button>
+      </div>
+      <div>
+  
       </div>
     </div>
    
       
-        
-    
-        
+      
+      <!-- make products section below this -->
+      <div id="container">
+          <!-- append here -->
+         
       </div>
-   
- 
-
+      
+      
+    </div>
+    
+    <div id="another-footer">
+      <div>
+       
+          
+      </div>
+      
+    </div>
+  
+      <div id="product-footer">
+          <h3>Grab the Best Mobile Deals! Buy Mobile Phones Online at Paytm Mall</h3>
+          <p>Be it office, hospital, shopping mall, streets or sweet home, one thing that permanently accompanies you is the mobile phone. Mobile phones are no more a luxury, these have become a vital part of everyone’s daily lives nowadays. Regardless of the age group and social strata, everyone has a personal cell phone of their own. With the advent of smartphones, mobile phones have become more than just a communication device. All major mobile manufacturers such as <span class="product-footer">Samsung,</span> <span class="product-footer"> Apple,</span> <span class="product-footer">Nokia,</span> <span class="product-footer"> HTC,</span> <span class="product-footer">LG,</span>
+            <span class="product-footer">Motorola </span>and others are coming up with advance technology with their handsets. Apart from the basic functions of placing & receiving a call and sending messages, you can also play games, listen to music, watch videos, send or receive emails, indulge in net surfing and whatnot. You can stay in constant touch with friends & family and even help you to stay become more organized. <br><br>
+  
+              The market is flooded with a wide variety of mobile phones with a hundred different features, making it difficult for you to choose from! Paytm Mall offers you an enormous selection of iOS and Android mobile phones ranging from feature phones to smartphones at exclusive price rates to cater to all budget types and mobile phone requirements. Whether you are fond of Samsung or an Apple lover, Paytm Mall hosts a wide range of mobile phones in a wide variety of price points, specifications, features and configurations for you to pick as per your usability. Just log on to our website and get ready to be spoilt for choices. From simple feature phones to latest fully loaded smartphones, we have a myriad of options for every requirement and price point.  </p>
+  
+              <h3>Choosing The Right Phone For Yourself</h3>
+              <p>Your smartphones are probably one of the most important gadgets in your life. They not only help you to stay connected to your family and friends but also help you carry your work and leisure, such as music, movies and more, wherever you go. Hence, it becomes essential that you settle nothing short of best. Not just the look of the mobile phone becomes an essential factor but also the latest features. With a plethora of smartphones available in the market each month, you might be looking out for something that suits your style and requirement. Below are the few things which you should keep in mind before buying your new smartphone. <br><br>
+  
+                <span class="product-footer">Build Quality- </span>Durability of a smartphone is of high importance. Generally, you will get two types of builds- metal and plastic. Also, make sure your phone is water-resistant and good in aesthetics if you are particular about the look of your phone. <br><br>
+                  
+                <span class="product-footer"> Get The Right Screen Size-</span>You can opt for mobile phones with a screen smaller than 5.5 inches. Go for a bigger screen size if you are more into watching videos and playing games. For heavy usage, go for bigger screens ranging from 5.5 inches to 6 inches. <br><br>
+                  
+                <span class="product-footer">Processor- </span>A good processor will offer smooth gaming experience, quicker photo editing and faster open times for apps. If you do a lot of things with your smartphone like editing images, videos, documents online, play games then, opting for smartphones with Snapdragon 652 or Snapdragon 820/821 will make multitasking smoother. For simple usage, MediaTek processors will do the trick for you. <br><br>
+                  
+                <span class="product-footer">RAM-</span>High capacity RAM is essential for multitasking. While 2GB RAM is a standard option, 4GB RAMs are considered premium feature and 6GB RAM is found in high-tech phones like those of Galaxy Note 8. <br><br>
+                  
+                <span class="product-footer">Battery Life-</span>Every smartphone user not only wants their phone to charge faster but lasting longer on one charge. If you have a normal phone usage, then cell phones with 3000 mAh battery will be good to go and for more intense use can consider handsets with 3500 mAh battery or above. <br><br>
+                  
+                <span class="product-footer"> Camera-</span>For top camera performance, you don’t have to run after the higher number of pixels. Other things you need to take into consideration include a bright aperture, lenses & zoom, ISO control, autofocus and more.</p> <br><br>
+  
+                  <h4>Keypad and Feature Phones</h4>
+                  <p>If you wish to buy those simple phones, you can always explore our amazing array of feature phones that are available at the portal from renowned brands such as Videocon, Sansui, Samsung, Panasonic, Philips, Lava, Nokia, Shutterbugs and the options are many. Here, you will find a big variety of feature phones from popular brands at various price points. You can buy feature phones based upon SIM type, screen size, internal memory capacity, primary camera and much more. If you want to have a dual sim phone or looking for a higher megapixel camera phone or one with a bigger screen, don’t worry you will find your pick at Paytm Mall’s huge assortment for sure.</p>
+  
+                  <h4>Smartphones</h4>
+                  <p>If you are looking for a smartphone with the latest features and cutting-edge design, Paytm Mall is just the place for you. From affordable options to high-end phones, you will find all of them as per your requirements. Buy the best possible mobile phones online at the most efficient cost in India from Paytm Mall and get it delivered at your doorstep. <br><br>
+  
+                      No matter if you are looking for iOS, Android, Symbian or Tizen operating system, your search ends at Paytm Mall. We have hundreds of options for whichever operating system you may be considering. Apart from this, we have a vast selection of mobile phones to suit different requirements, such as dual SIM cards, long battery life, expandable memory card support and more. If you are an avid photographer and love clicking photographs and selfies from your phone, then you can check out our wide range of smartphones with the latest high-quality cameras. You can also get the best selfie smartphones with the front shooter to get beautiful selfies. <br><br>
+                      
+                      Get smarter by opting for smartphones of your own choice available at the best price in India. Big or small or phones of your palm size that fits in comfortably in your pockets, any kind of screens you are looking for, you will find it right here at the store. The extensive collection includes mobile phones from the leading mobile brands such as Apple, HTC and Samsung to the best brands from the Chinese market such as Xiaomi & Oppo to the traditional Indian brands such as Lava, Micromax & Videocon. What’s more, these top brands are available at great deals, discounts and Cashback offers. When you buy from us, you can rest assured of quality as we sell products only from authorized dealers.</p> <br><br>
+      </div>
+  
+  
+  
+    
+    </div>
+  
+    <div>
+  
+    </div>
+  
     <footer>
         <!-- footer section will be copied from home page don't do anything here -->
     </footer>
