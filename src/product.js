@@ -49,7 +49,7 @@ function sliderrange(){
 // console.log(input.value)
 
 let bag = [];
-let container = document.querySelector("#container");
+let container = document.querySelector("#product-container");
 fetch("json/mens.json")
   .then((res) => {
     return res.json()
@@ -65,7 +65,7 @@ fetch("json/mens.json")
 
 
 function display(data) {
-   
+   console.log(data)
     
   container.innerHTML = "";
   data.forEach((element, index) => {
@@ -197,5 +197,4 @@ function display(data) {
     
 
     
-}
 

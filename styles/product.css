@@ -8,11 +8,11 @@
   font-family: 'Poppins', sans-serif;
 } */
 body{
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  /* background: #17A2B8; */
+  justify-content: center; */
+  /* min-height: 100vh; */
+  background: #17A2B8; 
 }
 ::selection{
   color: #fff;
@@ -53,7 +53,7 @@ header p{
   border-radius: 5px;
   text-align: center;
   border: 1px solid #999;
-  -moz-appearance: textfield;
+  /* -moz-appearance: textfield; */
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -90,8 +90,6 @@ input[type="number"]::-webkit-inner-spin-button {
   top: -5px;
   background: none;
   pointer-events: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 input[type="range"]::-webkit-slider-thumb{
   height: 17px;
@@ -197,7 +195,7 @@ color: white;
 /* ###################################################### */
 
 
-.container {
+.product-container {
   display: none;
   position: relative;
   padding-left: 35px;
@@ -213,7 +211,7 @@ color: white;
 
 
 /* Hide the browser's default checkbox */
-.container input {
+.product-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -232,12 +230,12 @@ color: white;
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.product-container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.product-container input:checked ~ .checkmark {
   background-color: #2196F3;
 }
 
@@ -265,12 +263,12 @@ color: white;
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.product-container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.product-container .checkmark:after {
   left: 9px;
   top: 5px;
   width: 5px;
@@ -291,35 +289,41 @@ color: white;
   height: 40px;
   border: 2px solid green;
   border-radius: 5px;
+  position: relative;
+  top: 60px;
+right: 80px;
+  
 }
 #sort{
   text-align: end;
 }
-#container{
-    
+#product-container{
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  width: 70%;
-  margin: auto;
- gap: 30px;
+  gap: 20px;
+  float: right;
+  margin-top: 50px;
  
 
 }
 
 
 
-#container>div>img{
+#product-container>div>img{
   width: 100%;
+  transition:  ease-out 0.3s;
+  overflow: hidden;
   
 }
-#container>div>div{
+#product-container>div>div{
   width: 50%;
   display: flex;
   grid-template-columns: repeat(5,1fr);
   border: 2px solid green;
   gap: 20px;
 }
-#container>div>button{
+#product-container>div>button{
   width: 100px;
   /* font-family: sans-serif Verdana, Geneva, Tahoma, sans-serif; */
 }
@@ -355,14 +359,14 @@ height: 35px;
   height: 30px;
 }
 
-#container>img{
+#product-container>img{
   width: 100%;
   transition: ease-out 0.5s;
 }
-#container>div>img:hover{
-  transform: scale(1.1);
+#product-container>div>img:hover{
+  transform: scale(1.2);
 }
-#container>div>button:hover{
+#product-container>div>button:hover{
   cursor: pointer;
 }
 
