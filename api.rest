@@ -1,1 +1,1 @@
-https://63c83d65e52516043f4ebbdc.mockapi.io/MasaiMart/MasaiAdmin
+GET https://63c83d65e52516043f4ebbdc.mockapi.io/MasaiMart/MasaiAdmin

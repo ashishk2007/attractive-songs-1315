@@ -42,6 +42,7 @@
             /* If you don't have CSS/styling knowledge you should consider using Bootstrap or similar CSS frameworks */
         
             /* Add a container for the checkout form */
+
             .checkout-container {
                 width: 50%;
                 margin: 0 auto;
@@ -83,60 +84,12 @@
                 background-color: #45a049;
             }
           </style>
-          <style>
-            .card {
-            width: 25%;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            padding: 12px;
-            transition: all 0.2s ease-in-out;
-        }
-        
-        .card:hover {
-            border-color: #333;
-        }
-        
-        .card-img-container {
-            width:100%;
-            height: auto;
-        }
-        
-        .card-content {
-            margin-top: 10px;
-        }
-        
-        .card-brand {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .card-product {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        
-        .card-price {
-            font-size: 16px;
-            color: #999;
-        }
-        
-        .card-original-price {
-            margin-right: 10px;
-            text-decoration: line-through;
-        }
-        
-        .card-discount-price {
-            color: #333;
-        }
-         
-          </style>
-    
        
     
        
     </head>
 <body>
+
     <div class="main" id="qrparent" style="background-color: #F8F9FC;">
         <div class="menuContainer">
             <div class="loginLeftSectionContainer">
@@ -235,16 +188,15 @@
             <hr id="qrhr">
         </div>
     </div>
-
-
+    <!-- above is qrcode popup don't do anything do it -->
     <nav id="nav" id="navi">
         <!-- Create navbar here make sure all id and classes name start with nav -->
         <div style="height: 25px;background-color: #F4F4F4;" class="active"></div>
         <div>
-            <img src="./imges/WhatsApp Image 2023-01-18 at 15.05.36.jpeg" alt="logo"
-                style="width: 100px;display: block; height: 80px;margin: auto;">
+           <a href="index.html"> <img src="./imges/WhatsApp Image 2023-01-18 at 15.05.36.jpeg" alt="logo"
+                style="width: 100px;display: block; height: 80px;margin: auto;"></a>
         </div>
-    
+
         <div class="navsearch">
             <div style="display: grid;place-items: center;">
                 <div>
@@ -265,35 +217,22 @@
             </div>
             <div>
                 <i class="fa-solid fa-bag-shopping"></i>
-                <div class="navanchor" style="display: inline-block;">Not items in the bag</div>
+                <div class="navanchor" style="display: inline-block;"><a href="./cart.html"> Not items in the bag</a>
+                </div>
             </div>
             <div>
                 <i class="fa-solid fa-user-plus"></i>
                 <div class="navanchor" id="click" style="display: inline-block;">Login/SignUp</div>
             </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <div class="navanchor" id="click"  style="display: inline-block;"><a href="./admin-page.html"> Admin </a></div>
+            </div>
         </div>
     </nav>
-        <!-- <div class="card">
-        <a href="..." class="card-link">
-            <div class="card-img-container">
-                <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPSWASTIK-STUFSWAS8094036EAFE5D4/1563091921047_0..jpeg?imwidth=282&impolicy=hq" alt="..." class="card-img">
-            </div>
-            <div class="card-content">
-                <div class="card-brand">SWASTIK STUFFS</div>
-                <div class="card-product">Cotton;Lycra Solid Leggings 3</div>
-                <div class="card-price">
-                    <span class="card-original-price">449</span>
-                    <span class="card-discount-price">1,199</span>
-                </div>
-            </div>
-        </a>
-    </div> -->
-    
-    <div class="container">
 
-    </div>
-  <div class="checkout-container">
-    <form action="/" method="post">
+  <div class="checkout-container" id="checkoutContainer">
+    <form id="form">
       <h2>Shipping Information</h2>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -350,12 +289,12 @@
 
       <h2>Payment Information</h2>
       <div class="payment-options">
-        <input type="radio" id="debit-card" name="payment-option" value="debit-card" required>
+        <input type="radio" id="debitcard" name="payment-option" value="debit-card" required>
         <label for="debit-card">Debit Card</label>
 
-        <input type="radio" id="credit-card" name="payment-option" value="credit-card">
+        <input type="radio" id="creditcard" name="payment-option" value="credit-card">
         <label for="credit-card">Credit Card</label>
-        <input type="radio" id="paytm-wallet" name="payment-option" value="paytm-wallet">
+        <input type="radio" id="paytmwallet" name="payment-option" value="paytm-wallet">
         <label for="paytm-wallet">Paytm Wallet Rs:- <strong>400</strong></label>
       </div>
     
@@ -371,7 +310,6 @@
       <input type="submit" value="Place Order">
     </form>
 </div>
-    
 </body>
 </html>
 
@@ -379,3 +317,36 @@
 
 <script src="./src/qrcode.js"></script>
 <script src="./src/otp.js"></script>
+
+
+<script>
+let submit = document.querySelector("form");
+
+
+let success = document.getElementById("success-container");
+let checkout = document.getElementById("checkoutContainer");
+
+submit.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let payment;
+    if(submit.debitcard.checked){
+        payment="Debit-card"
+    }
+    if(submit.creditcard.checked){
+        payment="Credit-card"
+    }
+    if(submit.paytmwallet.checked){
+        payment="Paytm Wallet"
+    }
+    let obj = {
+        name: submit.name.value,
+        address: submit.address.value,
+        city: submit.city.value,
+        state: submit.state.value,
+        zip: submit.zip.value,
+        payment: payment,
+    }
+localStorage.setItem("address",JSON.stringify(obj));
+window.location = "success.html";
+})
+</script>

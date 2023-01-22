@@ -52,7 +52,6 @@
         #Product-container{
            display: flex;
            flex-direction: row;
-           width: 95%;
            margin: auto;
            gap: 0px 20px;
            padding-top: 30px;
@@ -346,14 +345,15 @@
         </div>
     </div>
 
+    <!-- above is qrcode popup don't do anything do it -->
     <nav id="nav" id="navi">
         <!-- Create navbar here make sure all id and classes name start with nav -->
         <div style="height: 25px;background-color: #F4F4F4;" class="active"></div>
         <div>
-            <a href="index.html"><img  src="./imges/WhatsApp Image 2023-01-18 at 15.05.36.jpeg" alt="logo"
+           <a href="index.html"> <img src="./imges/WhatsApp Image 2023-01-18 at 15.05.36.jpeg" alt="logo"
                 style="width: 100px;display: block; height: 80px;margin: auto;"></a>
         </div>
-    
+
         <div class="navsearch">
             <div style="display: grid;place-items: center;">
                 <div>
@@ -374,14 +374,20 @@
             </div>
             <div>
                 <i class="fa-solid fa-bag-shopping"></i>
-                <div class="navanchor" style="display: inline-block;">Not items in the bag</div>
+                <div class="navanchor" style="display: inline-block;"><a href="./cart.html"> Not items in the bag</a>
+                </div>
             </div>
             <div>
                 <i class="fa-solid fa-user-plus"></i>
                 <div class="navanchor" id="click" style="display: inline-block;">Login/SignUp</div>
             </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <div class="navanchor" id="click"  style="display: inline-block;"><a href="./admin-page.html"> Admin </a></div>
+            </div>
         </div>
     </nav>
+
 
     <div id="Product-container">
         <div id="first-div">
