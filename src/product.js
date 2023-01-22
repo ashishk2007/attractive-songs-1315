@@ -176,8 +176,8 @@ function display(data) {
    })
 
    function search(){
-    container.innerHTML=null
-    let q = document.querySelector("input").value;
+    
+    let q = document.querySelector(".input").value;
     console.log("working")
     let newdata = bag.filter(function(element){
      return element.brand.toLowerCase().includes(q.toLowerCase())
