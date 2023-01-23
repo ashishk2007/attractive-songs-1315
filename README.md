@@ -54,6 +54,18 @@ Paytm Mall strives hard to make your online shopping a more pleasant and cost-ef
 
 
 
+<img width="1440" alt="Screenshot 2023-01-23 at 12 20 36 PM" src="https://user-images.githubusercontent.com/113036805/213980834-f75205d8-4a33-4fa9-a529-6ce598ac78e9.png">
+
+
+
+
+
+
+
+
+<img width="1238" alt="Screenshot 2023-01-23 at 12 21 02 PM" src="https://user-images.githubusercontent.com/113036805/213980903-99c1c0c0-bc56-491f-b9e1-a046b4f7b317.png">
+
+
 
 
 
