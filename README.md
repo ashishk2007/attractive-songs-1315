@@ -14,8 +14,7 @@ link--https://dreamy-semifreddo-625c90.netlify.app/
 Paytm Mall is an  Indian e-commerce website.
 Paytm Mall strives hard to make your online shopping a more pleasant and cost-effective experience by providing the top quality products at the best price rates in India. Our collection of products consist of electronic appliances, clothes, grocery, home and kitchen products, backpacks, automobiles, books and stationery, to name a few.
 
-![image](https://drive.google.com/file/d/11NgzkyQH8tfaGaSmyW5rZBIhqdW8N3Nw/view?usp=share_link)
-
+<img width="1435" alt="Screenshot 2023-01-23 at 12 19 25 PM" src="https://user-images.githubusercontent.com/113036805/213980655-792cf083-1e62-4ba2-85b9-d3576e1cf8d3.png">
 
 
 
